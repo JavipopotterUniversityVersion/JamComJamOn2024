@@ -5,7 +5,7 @@ using UnityEngine;
 public class JointController : MonoBehaviour
 {
     Rigidbody2D rb;
-    [SerializeField] float speed = 5;
+    public float speed = 5;
     // Start is called before the first frame update
     void Start()
     {

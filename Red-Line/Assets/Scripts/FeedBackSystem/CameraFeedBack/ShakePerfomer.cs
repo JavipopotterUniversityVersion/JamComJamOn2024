@@ -15,9 +15,9 @@ public class ShakePerfomer : MonoBehaviour
         cinemachineBasicMultiChannelPerlin = 
         GetComponent<CinemachineVirtualCamera>().
         GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        SubscribeToCameraEffects();
     }
 
-    private void Start() => SubscribeToCameraEffects();
     private void OnDestroy() => UnsubscribeToCameraEffects();
 
     void SubscribeToCameraEffects() => cameraEffects.ShakeEvent.AddListener(Shake);
@@ -29,11 +29,9 @@ public class ShakePerfomer : MonoBehaviour
     {
         cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = shakeValue;
         cinemachineBasicMultiChannelPerlin.m_FrequencyGain = shakeValue;
-        //Gamepad.current.SetMotorSpeeds(3f, 3f);
 
         yield return new WaitForSecondsRealtime(shakeTime);
 
-        //Gamepad.current.SetMotorSpeeds(0, 0);
         cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0;
         cinemachineBasicMultiChannelPerlin.m_FrequencyGain = 0;
     }

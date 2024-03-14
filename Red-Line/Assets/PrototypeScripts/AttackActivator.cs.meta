@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 7ae5f35c27e362a48b585a62e53ccbd9
+guid: a683acdfead4db7499f83d439da1f559
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - cameraEffects: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
