@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -69,5 +70,11 @@ namespace MenusSystem
         {
             Screen.fullScreen = fullScreen;
         }
+        
+        public void ResumeGame()
+        {
+            Time.timeScale = 1;
+        }
+
     }
 }
