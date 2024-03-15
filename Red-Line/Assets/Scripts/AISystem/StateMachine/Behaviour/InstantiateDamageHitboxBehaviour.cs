@@ -26,5 +26,10 @@ public class InstantiateDamageCircleBehaviour : MonoBehaviour, IBehaviour
         }
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(_myTransform.position, _explosionRadius);
+    }
 
 }

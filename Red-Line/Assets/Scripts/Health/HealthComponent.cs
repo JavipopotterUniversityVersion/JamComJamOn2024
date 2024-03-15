@@ -21,6 +21,15 @@ public class HealthComponent : MonoBehaviour
         }
     }
 
+    public void Heal(int healNum)
+    {
+        _currentHealth += healNum;
+        if ( _currentHealth > _maxHealth )
+        {
+            _currentHealth = _maxHealth;
+        }
+    }
+
     private void Awake()
     {
         _currentHealth = _maxHealth;
