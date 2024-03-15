@@ -216,6 +216,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4655181363195033131}
+  - {fileID: 2021044788827079204}
   m_Father: {fileID: 4615948595046347587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3456499373628711523
@@ -313,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd6c89df896d9d4db52844020ecc3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialStateContainer: {fileID: 0}
+  initialStateContainer: {fileID: 790892150878041890}
   permanentBehaviours: []
 --- !u!1 &3897843990343499680
 GameObject:
@@ -324,6 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4655181363195033131}
+  - component: {fileID: 6097525067635643484}
   m_Layer: 0
   m_Name: InstantiateDamageHitboxBehaviour
   m_TagString: Untagged
@@ -346,6 +348,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7328770936567236352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6097525067635643484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3897843990343499680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eafd289e5b2624baa36d914bd1e0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explosionRadius: 1
+  _whatLayerToDetect:
+    serializedVersion: 2
+    m_Bits: 64
+  _damage: 1
+--- !u!1 &5030536555824293185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021044788827079204}
+  - component: {fileID: 5536665105849952098}
+  m_Layer: 0
+  m_Name: DestroyMeBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2021044788827079204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5030536555824293185}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7328770936567236352}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5536665105849952098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5030536555824293185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba710b8c35399948a6d4ef79a097a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fokingObjectToDestroy: {fileID: 5031662594446803402}
 --- !u!1 &5031662594446803402
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +585,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateAnimation: 
-  onEnterPerformers: []
+  onEnterPerformers:
+  - condition: []
+    behaviourContainers:
+    - {fileID: 5030536555824293185}
   onUpdatePerformers: []
   onExitPerformers: []
   nextStates: []
@@ -604,11 +671,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateAnimation: 
-  onEnterPerformers: []
+  onEnterPerformers:
+  - condition: []
+    behaviourContainers:
+    - {fileID: 3897843990343499680}
   onUpdatePerformers: []
   onExitPerformers: []
   nextStates:
   - conditions:
-    - conditionContainer: {fileID: 6402354456680096109}
+    - conditionContainer: {fileID: 2781502690664085252}
       negated: 0
-    stateContainer: {fileID: 2781502690664085252}
+    stateContainer: {fileID: 6402354456680096109}
