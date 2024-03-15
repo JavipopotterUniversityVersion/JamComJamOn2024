@@ -828,7 +828,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestGameScene
+          m_StringArgument: ControlPrototype
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &582268525
@@ -1647,6 +1647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneSettings
       objectReference: {fileID: 0}
+    - target: {fileID: 7291814157501313003, guid: cd898cea86d75964c8b1648ca5351fd3, type: 3}
+      propertyPath: _sceneSettings
+      value: 
+      objectReference: {fileID: 337220111}
     - target: {fileID: 8561610967904893407, guid: cd898cea86d75964c8b1648ca5351fd3, type: 3}
       propertyPath: _muteImage
       value: 

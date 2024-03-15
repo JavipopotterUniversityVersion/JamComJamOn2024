@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace MenusSystem
 {
-    internal class SceneSttings : MonoBehaviour
+    internal class SceneSettings : MonoBehaviour
     {
 
         //sounds
@@ -30,14 +30,7 @@ namespace MenusSystem
             ShowSoundImage();
 
             //full screen
-            if (Screen.fullScreen)
-            {
-                _fullScreenToggle.isOn = true;
-            }
-            else
-            {
-                _fullScreenToggle.isOn = false;
-            }
+            CheckFullScreen();
         }
 
 
@@ -49,6 +42,18 @@ namespace MenusSystem
             AudioListener.volume = _soundSlider.value;
             ShowSoundImage();
 
+        }
+
+        public void CheckFullScreen()
+        {
+            if (Screen.fullScreen)
+            {
+                _fullScreenToggle.isOn = true;
+            }
+            else
+            {
+                _fullScreenToggle.isOn = false;
+            }
         }
 
         public void ShowSoundImage()
