@@ -14,7 +14,11 @@ public class WaitCondition : MonoBehaviour, ICondition
             _currentTime = _currentTime + Time.deltaTime;
             return false;
         }
-        else return true;
+        else
+        {
+            _currentTime = 0;
+            return true;
+        }
     }
 
     private void Start()

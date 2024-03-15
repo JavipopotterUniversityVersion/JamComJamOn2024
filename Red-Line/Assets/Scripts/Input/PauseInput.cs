@@ -7,7 +7,6 @@ namespace InputSystem
     {
         [SerializeField] private InputActionReference _pauseInputActionReference;
         [SerializeField] private PauseRequesterObject _pauseRequester;
-        [SerializeField] private GameObject _HUDPanel;
         [SerializeField] private GameObject _settingsPanel;
 
         private bool _isGamePaused = false;
@@ -25,11 +24,14 @@ namespace InputSystem
 
         public void SwitchPause() {
             _isGamePaused = !_isGamePaused;
-            //_HUDPanel.SetActive(!_isGamePaused);
             _settingsPanel.SetActive(_isGamePaused);
 
-            if (_isGamePaused) _pauseRequester.RequestPause();
-            else _pauseRequester.RequestResume();
+
+            //if (_isGamePaused) _pauseRequester.RequestPause();
+            //else _pauseRequester.RequestResume();
+
+            if (_isGamePaused) Time.timeScale = 0;
+            else Time.timeScale = 1;
         }
 
         #region ENABLE / DISABLE INPUTACTIONS

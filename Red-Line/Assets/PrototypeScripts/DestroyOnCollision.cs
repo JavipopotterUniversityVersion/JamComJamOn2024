@@ -11,7 +11,12 @@ public class DestroyOnCollision : MonoBehaviour
         if(targetLayer == (targetLayer | (1 << other.gameObject.layer)))
         {
             onCollide?.Invoke();
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+
+            if (other.TryGetComponent<HealthComponent>(out HealthComponent health))
+            {
+                health.Damage(100000);
+            }
         }
     }
 }
