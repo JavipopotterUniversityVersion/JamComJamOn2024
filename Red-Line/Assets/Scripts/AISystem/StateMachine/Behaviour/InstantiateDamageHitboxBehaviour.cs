@@ -17,7 +17,7 @@ public class InstantiateDamageCircleBehaviour : MonoBehaviour, IBehaviour
     [SerializeField] private int _damage = 1;
     public void ExecuteBehaviour()
     {
-        Collider2D player = Physics2D.OverlapCircle(transform.position, _explosionRadius, _whatLayerToDetect.value);
+        Collider2D player = Physics2D.OverlapCircle(_myTransform.position, _explosionRadius, _whatLayerToDetect.value);
 
         if (player != null &&!_hit)
         {
@@ -26,10 +26,14 @@ public class InstantiateDamageCircleBehaviour : MonoBehaviour, IBehaviour
         }
     }
 
+    private void Awake()
+    {
+        _myTransform = transform;
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(_myTransform.position, _explosionRadius);
+        Gizmos.DrawWireSphere(transform.position, _explosionRadius);
     }
 
 }

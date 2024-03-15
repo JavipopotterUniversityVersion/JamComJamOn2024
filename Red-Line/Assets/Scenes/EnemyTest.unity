@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1509731}
   - component: {fileID: 1509730}
   - component: {fileID: 1509732}
+  - component: {fileID: 1509733}
   m_Layer: 6
   m_Name: player
   m_TagString: Untagged
@@ -243,6 +244,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1509733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79a9e4735cc9614b9481629f5c2b63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 3
+  _currentHealth: 1
+  _dieEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &435117254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -251,10 +269,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1449462531804992947, guid: e39a43b663155474aab2e307205017f6, type: 3}
-      propertyPath: initialStateContainer
-      value: 
-      objectReference: {fileID: 600390005}
     - target: {fileID: 2509959745418390585, guid: e39a43b663155474aab2e307205017f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -304,11 +318,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e39a43b663155474aab2e307205017f6, type: 3}
---- !u!1 &600390005 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 790892150878041890, guid: e39a43b663155474aab2e307205017f6, type: 3}
-  m_PrefabInstance: {fileID: 435117254}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1338731130
 GameObject:
   m_ObjectHideFlags: 0
