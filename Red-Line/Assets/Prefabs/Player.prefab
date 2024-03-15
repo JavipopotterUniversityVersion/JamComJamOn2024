@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5963783213931449958}
   - component: {fileID: 7942786366477726463}
   - component: {fileID: 525471934930820380}
-  m_Layer: 0
+  - component: {fileID: 701347099688223240}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,6 +109,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 61ab503e-b582-4f43-9683-ab0594710192
     m_ActionName: Playing/Dash[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a257d9d7-62f5-4537-a593-e10857817214
+    m_ActionName: PauseGame/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Playing
@@ -125,6 +130,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8cdb53c9decdb47a93f5f0130fca63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &701347099688223240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787204173971276542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79a9e4735cc9614b9481629f5c2b63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 3
+  _currentHealth: 3
+  _dieEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1149049607328998303
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7766606613588255256}
   - component: {fileID: 8764568775675774527}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3930111776131176020}
   - component: {fileID: 5959810428341141928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: srd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +327,7 @@ GameObject:
   - component: {fileID: 1097753185315035520}
   - component: {fileID: 7704737270247126428}
   - component: {fileID: 2188258331124458096}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DamageArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +495,7 @@ GameObject:
   - component: {fileID: 5752064033877019351}
   - component: {fileID: 1892180730342865741}
   - component: {fileID: 4338750590706020769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +767,7 @@ GameObject:
   - component: {fileID: 58179200430725213}
   - component: {fileID: 8573011692804133343}
   - component: {fileID: 7211284507490280170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

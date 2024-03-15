@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1475008637173466043}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: States
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8910128204101644539}
   - component: {fileID: 582795340836398209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IdleState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3904167726043919348}
   - component: {fileID: 4742067338785244994}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OnExplodingState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5468067836442033635}
   - component: {fileID: 1126601963783865123}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExplodedWaitCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7328770936567236352}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Behaviours
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 150959142629432118}
   - component: {fileID: 5223932508103490918}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DetectPlayerCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4615948595046347587}
   - component: {fileID: 1449462531804992947}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4655181363195033131}
   - component: {fileID: 6097525067635643484}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InstantiateDamageHitboxBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2021044788827079204}
   - component: {fileID: 5536665105849952098}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DestroyMeBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2509959745418390585}
   - component: {fileID: 4122136755199550250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExplotaEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5952279554344518678}
   - component: {fileID: 1464439825367141498}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OnExplodingWaitCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5821310445215043728}
   - component: {fileID: 5460432287831023392}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DieState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6387721495961650888}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Conditions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8440589993458883281}
   - component: {fileID: 2132490111422996006}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExplodedState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
