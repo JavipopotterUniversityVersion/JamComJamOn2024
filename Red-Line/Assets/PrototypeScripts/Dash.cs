@@ -16,10 +16,14 @@ public class Dash : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update() {
-        timer += Time.deltaTime;
+    private void Update()
+    {
+        if(timer < 1) timer += Time.deltaTime;
+    }
 
-        if(Input.GetKeyDown(KeyCode.Space) && timer > 1f)
+    public void DashAction()
+    {
+        if(timer >= 1f)
         {
             timer = 0;
             StartCoroutine(DashRoutine());
