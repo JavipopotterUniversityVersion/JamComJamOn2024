@@ -31,7 +31,7 @@ namespace InputSystem
             //else _pauseRequester.RequestResume();
 
             if (_isGamePaused) Time.timeScale = 0;
-          //  else Time.timeScale = 1;
+            else Time.timeScale = 1;
         }
 
         #region ENABLE / DISABLE INPUTACTIONS
