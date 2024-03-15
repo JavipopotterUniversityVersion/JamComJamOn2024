@@ -14,13 +14,12 @@ public class WebReleaser : MonoBehaviour
         sr = GetComponentInChildren<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ThrowWeb(float sum)
     {
         Vector2 connectedDirection = (Vector2)hingeJoint2D.connectedBody.transform.position - (Vector2)transform.position;
         connectedDirection.Normalize();
 
-        float value = Input.GetAxis("Vertical") * releaseFactor * Time.deltaTime;
+        float value = sum * releaseFactor * Time.deltaTime;
 
         if(connectedDirection.y < 0) value *= -1;
 

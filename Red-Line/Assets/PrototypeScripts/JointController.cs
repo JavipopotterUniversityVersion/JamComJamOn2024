@@ -13,9 +13,8 @@ public class JointController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Move(Vector2 direction)
     {
-        float axis = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(axis * speed, rb.velocity.y);
+        rb.velocity = direction * speed;
     }
 }
