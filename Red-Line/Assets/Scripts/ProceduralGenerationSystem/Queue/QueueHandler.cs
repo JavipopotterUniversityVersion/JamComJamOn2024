@@ -12,11 +12,9 @@ namespace ProceduralGenerationSystem.Queue
         private GameObject[] _rooms; 
         private Queue<GameObject> _roomQueue;
 
-        private void Start ()
+        private void Awake()
         {
-            _rooms = new GameObject[_numberOfRooms];
-            _rooms = Resources.LoadAll<GameObject>("Prefabs/Rooms");
-
+            _rooms = Resources.LoadAll<GameObject>("Rooms");
             _roomQueue = new Queue<GameObject>();
 
             for (int i = 0; i < _queueLength; i++) EnqueueNewRoom();
