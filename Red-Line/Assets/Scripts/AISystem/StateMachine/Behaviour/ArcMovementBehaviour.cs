@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArcMovementBehaviour : MonoBehaviour, IBehaviour
 {
-    TargetHandler targetHandler;
+    HealthComponent healthComponent;
     [SerializeField] AnimationCurve curve;
 
     [SerializeField]
@@ -17,13 +17,13 @@ public class ArcMovementBehaviour : MonoBehaviour, IBehaviour
     [SerializeField] Vector2 rangeY;
 
     private void Awake() {
-        targetHandler = GetComponentInParent<TargetHandler>();
+        healthComponent = GetComponentInParent<HealthComponent>();
     }
 
     public void ExecuteBehaviour()
     {
-        Vector2 start = targetHandler.transform.position;
-        Vector2 end = new Vector2(Random.Range(rangeX.x, rangeX.y), Random.Range(rangeY.x, rangeY.y)) + (Vector2)targetHandler.transform.position;
+        Vector2 start = healthComponent.transform.position;
+        Vector2 end = new Vector2(Random.Range(rangeX.x, rangeX.y), Random.Range(rangeY.x, rangeY.y)) + (Vector2)healthComponent.transform.position;
 
         StartCoroutine(Curve(start, end));
     }
@@ -38,7 +38,7 @@ public class ArcMovementBehaviour : MonoBehaviour, IBehaviour
             Vector2 position = Vector2.Lerp(start, end, t);
             position.y += curve.Evaluate(t) * height;
 
-            targetHandler.transform.position = position;
+            healthComponent.transform.position = position;
 
             timePassed += Time.deltaTime;
             yield return null;
