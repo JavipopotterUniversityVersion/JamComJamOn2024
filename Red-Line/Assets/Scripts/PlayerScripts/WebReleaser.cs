@@ -30,8 +30,6 @@ public class WebReleaser : MonoBehaviour
         Vector2 connectedDirection = (Vector2)hingeJoint2D.connectedBody.transform.position - (Vector2)transform.position;
         connectedDirection.Normalize();
 
-        value = sum * releaseFactor * Time.deltaTime;
-
-        if(connectedDirection.y < 0) value *= -1;
+        value = -(sum * releaseFactor * Time.deltaTime);
     }
 }
