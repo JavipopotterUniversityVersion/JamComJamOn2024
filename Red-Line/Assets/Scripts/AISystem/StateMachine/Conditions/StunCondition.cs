@@ -2,17 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StunCondition : MonoBehaviour
+public class StunCondition : MonoBehaviour, ICondition
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool _stunned = false;
+    private bool startedCoroutine = false;
+    public bool CheckCondition()
     {
-        
+        return _stunned;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Stun(float seconds)
     {
-        
+        if (!startedCoroutine)
+        {
+            StartCoroutine(ReturnStun(seconds));
+        }
+    }
+
+    IEnumerator ReturnStun(float seconds)
+    {
+        startedCoroutine = true;
+        _stunned = true;
+
+        yield return new WaitForSeconds(seconds);
+        _stunned = true;
+        startedCoroutine = false;
     }
 }
