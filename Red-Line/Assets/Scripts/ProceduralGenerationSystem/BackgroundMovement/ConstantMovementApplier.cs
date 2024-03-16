@@ -9,6 +9,7 @@ namespace ProceduralGenerationSystem.BackgroundMovement
     {
         [SerializeField] private TestSpeedProviderObject _speedProvider;
         [SerializeField] private Vector2 _direction;
+        [SerializeField] private float _parallaxFactor;
         private Transform _transform;
 
         private void Awake()
@@ -17,7 +18,7 @@ namespace ProceduralGenerationSystem.BackgroundMovement
         }
         private void Update()
         {
-            _transform.position += (Vector3)_direction * _speedProvider.Speed * Time.deltaTime;
+            _transform.position += (Vector3)_direction * _speedProvider.Speed * _parallaxFactor * Time.deltaTime;
         }
     }
 }

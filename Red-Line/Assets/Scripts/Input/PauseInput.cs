@@ -19,7 +19,16 @@ namespace InputSystem
         }
 
         private void OnPausedInputStarted(InputAction.CallbackContext obj) {
-            SwitchPause();
+
+            if (Time.timeScale == 1)
+            {
+                SwitchPause();
+            }
+            if(Time.timeScale == 0)
+            {
+                _isGamePaused = false;
+            }
+            print(_isGamePaused);
         }
 
         public void SwitchPause() {
