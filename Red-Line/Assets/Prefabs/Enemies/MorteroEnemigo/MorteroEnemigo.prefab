@@ -1,5 +1,102 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &860023934683833105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6342591578114850380}
+  - component: {fileID: 6930197312485869507}
+  m_Layer: 0
+  m_Name: StunState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6342591578114850380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860023934683833105}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8373845331319378371}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6930197312485869507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860023934683833105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cea6a7c29b5624eb3e58e9dc294545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateAnimation: 
+  onEnterPerformers: []
+  onUpdatePerformers: []
+  onExitPerformers: []
+  nextStates:
+  - conditions:
+    - conditionContainer: {fileID: 1849578668271665560}
+      negated: 1
+    stateContainer: {fileID: 7501373082476352072}
+--- !u!1 &1849578668271665560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6544252019830531660}
+  - component: {fileID: 4856251602468299567}
+  m_Layer: 0
+  m_Name: StunCondition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6544252019830531660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849578668271665560}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4377967140665835657}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4856251602468299567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849578668271665560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa45f78a90ea37142adcbdcabe8dacdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1880603790091477166
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +108,7 @@ GameObject:
   - component: {fileID: 2717388987015598570}
   - component: {fileID: 3759417689556518595}
   m_Layer: 7
-  m_Name: WaitToDieCondition
+  m_Name: Wait 1 sCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,6 +244,10 @@ MonoBehaviour:
     stateContainer: {fileID: 3998747490988660841}
   - conditions: []
     stateContainer: {fileID: 7501373082476352072}
+  - conditions:
+    - conditionContainer: {fileID: 1849578668271665560}
+      negated: 0
+    stateContainer: {fileID: 860023934683833105}
 --- !u!1 &2633249975632903652
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +554,7 @@ Transform:
   - {fileID: 6146411357476344994}
   - {fileID: 1487072238701157024}
   - {fileID: 9007079743105922027}
+  - {fileID: 6342591578114850380}
   m_Father: {fileID: 4960690942615083617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5953050985526054516
@@ -466,7 +568,7 @@ GameObject:
   - component: {fileID: 1095700867925590434}
   - component: {fileID: 7893799366120073496}
   m_Layer: 7
-  m_Name: WaitToShootCondition
+  m_Name: Wait 3 sCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,6 +776,7 @@ Transform:
   - {fileID: 1095700867925590434}
   - {fileID: 5360887218455154051}
   - {fileID: 2717388987015598570}
+  - {fileID: 6544252019830531660}
   m_Father: {fileID: 4960690942615083617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7501373082476352072
@@ -733,6 +836,10 @@ MonoBehaviour:
     - conditionContainer: {fileID: 1995828241009735598}
       negated: 0
     stateContainer: {fileID: 3998747490988660841}
+  - conditions:
+    - conditionContainer: {fileID: 1849578668271665560}
+      negated: 0
+    stateContainer: {fileID: 860023934683833105}
 --- !u!1 &7550527331039695707
 GameObject:
   m_ObjectHideFlags: 0

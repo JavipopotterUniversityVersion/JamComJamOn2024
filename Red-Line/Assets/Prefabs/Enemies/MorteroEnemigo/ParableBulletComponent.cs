@@ -1,42 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
-public class ParableBulletComponent : MonoBehaviour
+public class ParableBulletComponent : MonoBehaviour, ICondition
 {
-    private Vector3 _direction = Vector2.zero;
-
-    private Rigidbody2D _rb;
-
-    private bool hasHit = false;
-
-    [SerializeField] int _damage = 1;
-
-    [SerializeField] private float yDecreasing;
-
-    private void Update()
+    private bool _stunned = false;
+    private bool startedCoroutine = false;
+    public bool CheckCondition()
     {
-        _direction.y = _direction.y - yDecreasing;
-
-        _rb.MovePosition(_rb.transform.position + _direction * Time.deltaTime);
+        return _stunned;
     }
 
-    private void Awake()
+    public void Stun(float seconds)
     {
-        _rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent<HealthComponent>(out HealthComponent component) && !hasHit)
+        if (!startedCoroutine)
         {
-            hasHit = true;
-            component.Damage(_damage);
+            StartCoroutine(ReturnStun(seconds));
         }
     }
 
-    public void SetDirection(Vector3 direction)
+    IEnumerator ReturnStun(float seconds)
     {
-        _direction = direction;
+        startedCoroutine = true;
+        _stunned = true;
+
+        yield return new WaitForSeconds(seconds);
+        _stunned = true;
+        startedCoroutine = false;
     }
 }
