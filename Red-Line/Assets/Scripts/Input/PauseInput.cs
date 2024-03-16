@@ -24,6 +24,11 @@ namespace InputSystem
             {
                 SwitchPause();
             }
+            if(Time.timeScale == 0)
+            {
+                _isGamePaused = false;
+            }
+            print(_isGamePaused);
         }
 
         public void SwitchPause() {
