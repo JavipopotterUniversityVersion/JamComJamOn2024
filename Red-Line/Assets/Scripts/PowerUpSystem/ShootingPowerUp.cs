@@ -10,7 +10,7 @@ public class ShootingPowerUp : MonoBehaviour, IPowerUp
 
     public void Apply()
     {
-        _shootingComponent.enabled = _bulletStuns;
+        _shootingComponent.enabled = true;
         _shootingComponent.BulletStuns = _bulletStuns;
         Destroy(this.gameObject);
     }

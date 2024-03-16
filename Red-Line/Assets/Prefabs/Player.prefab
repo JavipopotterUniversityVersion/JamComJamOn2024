@@ -109,13 +109,25 @@ MonoBehaviour:
     m_ActionId: 61ab503e-b582-4f43-9683-ab0594710192
     m_ActionName: Playing/Dash[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a257d9d7-62f5-4537-a593-e10857817214
-    m_ActionName: PauseGame/Pause[/Keyboard/escape]
+      m_Calls:
+      - m_Target: {fileID: 525471934930820380}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4c9d53d1-6cd8-4e55-bd05-23c712668840
+    m_ActionName: Playing/Shoot[/Keyboard/e,/DualShock4GamepadHID/buttonWest]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 4c9d53d1-6cd8-4e55-bd05-23c712668840
-    m_ActionName: Playing/Shoot[/Keyboard/e]
+    m_ActionId: a257d9d7-62f5-4537-a593-e10857817214
+    m_ActionName: PauseGame/Pause[/Keyboard/escape,/DualShock4GamepadHID/select]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Playing
@@ -968,6 +980,7 @@ Transform:
   m_Children:
   - {fileID: 3930111776131176020}
   - {fileID: 1332410318513433739}
+  - {fileID: 8205814119652146400}
   m_Father: {fileID: 5963783213931449958}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &8548394627607472395
@@ -1125,7 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79a9e4735cc9614b9481629f5c2b63a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 3
+  _maxHealth: 4
   _currentHealth: 3
   _dieEvent:
     m_PersistentCalls:
@@ -1133,3 +1146,50 @@ MonoBehaviour:
   _onTakeDamage:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &9032570847906285317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8205814119652146400}
+  - component: {fileID: 192804789997546832}
+  m_Layer: 6
+  m_Name: ShootingComponent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8205814119652146400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9032570847906285317}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7964753687598820879}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &192804789997546832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9032570847906285317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5dbfb0897121284a9b4613552be9ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stunningBullet: {fileID: 6182723528503580221, guid: 8e4cb92e097fee649b4cf96924497afc, type: 3}
+  _poisonBullet: {fileID: 132345048144820993, guid: 08936132d15f2304d98f84e7d277dc7f, type: 3}
+  _snailRB: {fileID: 7722268048434958687}

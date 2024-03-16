@@ -14,6 +14,9 @@ public class HealthComponent : MonoBehaviour
     [SerializeField]
     private UnityEvent _onTakeDamage;
 
+    public int MaxHealth { get => _maxHealth; set => _maxHealth = value; }
+    public int CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
+
     public void Damage(int damageNum)
     {
         _currentHealth = _currentHealth - damageNum;
