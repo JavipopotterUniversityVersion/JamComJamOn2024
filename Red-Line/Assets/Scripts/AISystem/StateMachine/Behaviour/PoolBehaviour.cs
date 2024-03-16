@@ -6,7 +6,7 @@ using UnityEngine;
 public class PoolBehaviour : MonoBehaviour, IBehaviour
 {
     PoolTaker poolTaker;
-    [SerializeField] string[] poolTag;
+    [SerializeField] GameObject[] prefabs;
 
     private void Awake() {
         poolTaker = GetComponent<PoolTaker>();
@@ -14,18 +14,18 @@ public class PoolBehaviour : MonoBehaviour, IBehaviour
 
     public void ExecuteBehaviour()
     {
-        foreach(string tag in poolTag)
+        foreach(GameObject prefab in prefabs)
         {
-            poolTaker.TakeFromPool(tag);
+            poolTaker.TakeFromPool(prefab);
         }
     }
 
     private void OnValidate() {
         string tagCombination = "";
 
-        foreach(string tag in poolTag)
+        foreach(GameObject prefab in prefabs)
         {
-            tagCombination += tag + ", ";
+            tagCombination += prefab.name + " ";
         }
 
         name = "PoolBehaviour: " + tagCombination;

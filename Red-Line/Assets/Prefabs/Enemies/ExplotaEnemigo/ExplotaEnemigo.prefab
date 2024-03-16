@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 6805278818518589538}
   - component: {fileID: 9043190173604624923}
   m_Layer: 7
-  m_Name: 'PoolBehaviour: blood, balloonParts, '
+  m_Name: 'PoolBehaviour: blood ExplotaEnemigoCachos '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -544,9 +544,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 134c6cc555cf7f644999a7367fc5c7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolTag:
-  - blood
-  - balloonParts
+  prefabs:
+  - {fileID: 339353361254067833, guid: 67b4c84161a388a4ea885c6ddcde1032, type: 3}
+  - {fileID: 5119275176150201148, guid: 9412a452cfe1dc2449e203adf53c1020, type: 3}
 --- !u!1 &5030536555824293185
 GameObject:
   m_ObjectHideFlags: 0

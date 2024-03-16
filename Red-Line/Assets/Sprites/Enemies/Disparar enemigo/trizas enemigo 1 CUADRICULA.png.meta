@@ -108,7 +108,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 793
+        width: 97
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a239939e98f03484095980a75c6d073b
+      internalID: 1842127862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 857
+        width: 190
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbb2871aa7dd344194146b811dffb59
+      internalID: 953891062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_2
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 854
+        width: 96
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbae6b592290714a8506246f77bcac8
+      internalID: -1784319522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_3
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 859
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1a2f4ef866c444c9b90cb9e840ae25
+      internalID: -2044759645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 541
+        width: 115
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5d524ca0c74fb489f3c5154075f6e6
+      internalID: 1260570038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 566
+        width: 70
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7977365a4e97b542a61644e64b15680
+      internalID: -206017740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_6
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 528
+        width: 103
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf77ccf6fd629749a236a76850731ca
+      internalID: -2030397945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_7
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 532
+        width: 69
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18faf7258ebb02340807f275fdc21864
+      internalID: 337005682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 307
+        width: 67
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1809d460192058f458700e41715bbeb3
+      internalID: 1172349890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 304
+        width: 66
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ee7a0c3ba8897409e8ebbcebf0f8d2
+      internalID: -684593689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_10
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 320
+        width: 54
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2d5a8db4674a54e8e6f082295f14a6
+      internalID: -765962767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_11
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 325
+        width: 56
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9aef07c164fda41959f51d2b7ab514
+      internalID: 282855621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 18
+        width: 114
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7045941ee3af4bb42ad2c781744ec5d4
+      internalID: 674466144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_14
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 79
+        width: 86
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a492aa1086aa248aed0adfba43cc92
+      internalID: -1734496549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trizas enemigo 1 CUADRICULA_15
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 24
+        width: 68
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538837fb5921ce4488e97c7123bf72f9
+      internalID: -1748437474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +434,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trizas enemigo 1 CUADRICULA_0: 1842127862
+      trizas enemigo 1 CUADRICULA_1: 953891062
+      trizas enemigo 1 CUADRICULA_10: -765962767
+      trizas enemigo 1 CUADRICULA_11: 282855621
+      trizas enemigo 1 CUADRICULA_12: -1844249437
+      trizas enemigo 1 CUADRICULA_13: 674466144
+      trizas enemigo 1 CUADRICULA_14: -1734496549
+      trizas enemigo 1 CUADRICULA_15: -1748437474
+      trizas enemigo 1 CUADRICULA_2: -1784319522
+      trizas enemigo 1 CUADRICULA_3: -2044759645
+      trizas enemigo 1 CUADRICULA_4: 1260570038
+      trizas enemigo 1 CUADRICULA_5: -206017740
+      trizas enemigo 1 CUADRICULA_6: -2030397945
+      trizas enemigo 1 CUADRICULA_7: 337005682
+      trizas enemigo 1 CUADRICULA_8: 1172349890
+      trizas enemigo 1 CUADRICULA_9: -684593689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
