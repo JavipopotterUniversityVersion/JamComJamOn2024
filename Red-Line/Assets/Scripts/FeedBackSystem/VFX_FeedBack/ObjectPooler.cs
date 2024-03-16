@@ -13,11 +13,11 @@ public class ObjectPooler : MonoBehaviour
             Queue<GameObject> objectPool = new Queue<GameObject>();
             for (int i = 0; i < poolObject.size; i++)
             {
-                GameObject obj = Instantiate(poolObject.prefab);
+                GameObject obj = Instantiate(poolObject.prefab[Random.Range(0, poolObject.prefab.Length)]);
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }
-            poolDictionary.Add(poolObject.prefab, objectPool);
+            poolDictionary.Add(poolObject.prefab[0], objectPool);
         }
     }
 
@@ -42,6 +42,6 @@ public class ObjectPooler : MonoBehaviour
 [System.Serializable]
 public class PoolObject
 {
-    public GameObject prefab;
+    public GameObject[] prefab;
     public int size;
 }
