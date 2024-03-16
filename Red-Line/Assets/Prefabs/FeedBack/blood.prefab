@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 3622321216630332344}
   - component: {fileID: 2386386348966725670}
   - component: {fileID: -8654246409807557401}
-  - component: {fileID: 1447141599227018819}
-  - component: {fileID: 606339478180729962}
   m_Layer: 0
   m_Name: blood
   m_TagString: Untagged
@@ -3944,7 +3942,7 @@ ParticleSystem:
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4781,7 +4779,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ec35c8eaadd30134d8be24e66fd52d5b, type: 2}
   - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4858,29 +4856,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed262d87cff4b047a6d530980541e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1447141599227018819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339353361254067833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01a15ab1000c6154eb5abe999f79a145, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 996270124207333973, guid: d2171dbc1aea13346a3ba834d9ef1c67, type: 3}
---- !u!114 &606339478180729962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339353361254067833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c648818175ef7b24cb745b50efe4faa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}

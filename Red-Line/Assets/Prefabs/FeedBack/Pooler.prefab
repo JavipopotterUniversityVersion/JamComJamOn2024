@@ -45,9 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolObjects:
-  - tag: blood
-    prefab: {fileID: 339353361254067833, guid: 67b4c84161a388a4ea885c6ddcde1032, type: 3}
-    size: 5
-  - tag: balloonParts
-    prefab: {fileID: 5119275176150201148, guid: 9412a452cfe1dc2449e203adf53c1020, type: 3}
-    size: 8
+  - prefab:
+    - {fileID: 339353361254067833, guid: 67b4c84161a388a4ea885c6ddcde1032, type: 3}
+    size: 16
+  - prefab:
+    - {fileID: 5119275176150201148, guid: 9412a452cfe1dc2449e203adf53c1020, type: 3}
+    size: 16
+  - prefab:
+    - {fileID: 8450006086027095068, guid: a1e9b7f71fe5ef249ab6d4246a08a230, type: 3}
+    size: 16
+  - prefab:
+    - {fileID: 996270124207333973, guid: d2171dbc1aea13346a3ba834d9ef1c67, type: 3}
+    size: 32

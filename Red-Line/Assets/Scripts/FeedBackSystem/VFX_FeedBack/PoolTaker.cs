@@ -16,14 +16,13 @@ public class PoolTaker : MonoBehaviour
             Destroy(this);
         }
 
-        if(spawnPoint == null)
-        {
-            spawnPoint = transform;
-        }
+        if(spawnPoint == null) spawnPoint = transform;
     }
 
     public void TakeFromPool(GameObject prefab)
     {
+        if(spawnPoint == null) spawnPoint = transform;
+
         objectPooler.SpawnFromPool(spawnPoint.position, spawnPoint.rotation, prefab);
     }
 }

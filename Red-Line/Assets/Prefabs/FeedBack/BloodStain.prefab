@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1631231082154446262}
   - component: {fileID: 2797479429914189477}
   - component: {fileID: 6643089163688955269}
+  - component: {fileID: 4124409846337344093}
+  - component: {fileID: 5016930743025804195}
   m_Layer: 0
   m_Name: BloodStain
   m_TagString: Untagged
@@ -73,9 +75,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 136888733
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a2da80ed7e158f149a41b5e90fdd9bf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -132,3 +134,30 @@ MonoBehaviour:
   _speedProvider: {fileID: 11400000, guid: 6c540e95625cdc74cb2c6e9314364977, type: 2}
   _direction: {x: -1, y: 0}
   _parallaxFactor: 0.5
+--- !u!114 &4124409846337344093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996270124207333973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bda266e852c901479c2841ffcd354a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deactivateTime: 150
+--- !u!114 &5016930743025804195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996270124207333973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75cfb43923b339545a97b561a54dc144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minScale: 1
+  _maxScale: 5
