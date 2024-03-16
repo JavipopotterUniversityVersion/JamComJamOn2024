@@ -17,6 +17,15 @@ public class WebReleaser : MonoBehaviour
     private void Update() {
         float anchorValue = hingeJoint2D.connectedAnchor.x + value;
 
+        if(anchorValue < 0.1f)
+        {
+            anchorValue = 0.1f;
+        }
+        else if(anchorValue > maxWebLength)
+        {
+            anchorValue = maxWebLength;
+        }
+
         hingeJoint2D.connectedAnchor = new Vector2(anchorValue, 0);
     }
 
@@ -25,9 +34,6 @@ public class WebReleaser : MonoBehaviour
         Vector2 connectedDirection = (Vector2)hingeJoint2D.connectedBody.transform.position - (Vector2)transform.position;
         connectedDirection.Normalize();
 
-        if(hingeJoint2D.connectedAnchor.x + value < maxWebLength && hingeJoint2D.connectedAnchor.x + value > 0.1f)
-        {
-            value = -(sum * releaseFactor * Time.deltaTime);
-        }
+        value = -(sum * releaseFactor * Time.deltaTime);
     }
 }

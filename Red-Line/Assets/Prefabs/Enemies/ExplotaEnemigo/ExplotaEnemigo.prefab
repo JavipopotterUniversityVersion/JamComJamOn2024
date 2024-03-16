@@ -650,6 +650,7 @@ GameObject:
   - component: {fileID: -3237362785230163310}
   - component: {fileID: 888604627142516366}
   - component: {fileID: 1685028328101545096}
+  - component: {fileID: -8597360242572069396}
   m_Layer: 7
   m_Name: ExplotaEnemigo
   m_TagString: Untagged
@@ -727,6 +728,30 @@ MonoBehaviour:
           m_StringArgument: blood
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
+        m_TargetAssemblyTypeName: CameraEffects, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 3
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
+        m_TargetAssemblyTypeName: CameraEffects, Assembly-CSharp
+        m_MethodName: HitStop
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.05
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 5536665105849952098}
         m_TargetAssemblyTypeName: DestroyMeBehaviour, Assembly-CSharp
         m_MethodName: ExecuteBehaviour
@@ -787,6 +812,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &-8597360242572069396
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031662594446803402}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5927805278815132695
 GameObject:
   m_ObjectHideFlags: 0
