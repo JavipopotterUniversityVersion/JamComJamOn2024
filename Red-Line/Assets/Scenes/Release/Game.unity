@@ -123,41 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &218199420 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 515461587839728891, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-  m_PrefabInstance: {fileID: 1392903002}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &218199424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218199420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 201054245, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &750224555
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +305,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2509959745418390585, guid: e39a43b663155474aab2e307205017f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.6497316
+      value: 9.99
       objectReference: {fileID: 0}
     - target: {fileID: 2509959745418390585, guid: e39a43b663155474aab2e307205017f6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -444,41 +409,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 761390094dc502d429c3148756dd9725, type: 3}
---- !u!1 &964004058 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5587874615041477827, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-  m_PrefabInstance: {fileID: 1392903002}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &964004062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964004058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 1346209974, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &1069077615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -714,85 +644,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1421385650}
-    - target: {fileID: 75338803811723724, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 75338803811723724, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenusSystem.SceneSettings, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 179089904946995111, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1421385650}
-    - target: {fileID: 179089904946995111, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeSoundSlider
-      objectReference: {fileID: 0}
-    - target: {fileID: 179089904946995111, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenusSystem.SceneSettings, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 281213764998497836, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 282.99994
-      objectReference: {fileID: 0}
-    - target: {fileID: 281213764998497836, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -255
-      objectReference: {fileID: 0}
     - target: {fileID: 288467134967562361, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 318744828105345005, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1813247181, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-    - target: {fileID: 906350420757080440, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Type
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 906350420757080440, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -223391727, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-    - target: {fileID: 1836245243002156099, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 283
-      objectReference: {fileID: 0}
-    - target: {fileID: 1836245243002156099, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -310.80078
-      objectReference: {fileID: 0}
-    - target: {fileID: 1860264768581095002, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 349020745, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-    - target: {fileID: 1860264768581095002, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.b
-      value: 0.12941177
-      objectReference: {fileID: 0}
-    - target: {fileID: 1860264768581095002, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.g
-      value: 0.13725491
-      objectReference: {fileID: 0}
-    - target: {fileID: 1860264768581095002, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.r
-      value: 0.19607845
-      objectReference: {fileID: 0}
-    - target: {fileID: 2169455670879623688, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2169455670879623688, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1813247181, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-    - target: {fileID: 2802132904652195602, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 2848175802052189071, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
       propertyPath: m_Pivot.x
@@ -886,70 +744,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1421385649}
-    - target: {fileID: 3153591011689146349, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 3153591011689146349, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SceneChange
-      objectReference: {fileID: 0}
-    - target: {fileID: 3153591011689146349, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenusSystem.SceneSettings, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3233500632440220213, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 272
-      objectReference: {fileID: 0}
-    - target: {fileID: 3233500632440220213, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -150
-      objectReference: {fileID: 0}
-    - target: {fileID: 3469537784559172215, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1384816269, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-    - target: {fileID: 3469537784559172215, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.b
-      value: 0.1254902
-      objectReference: {fileID: 0}
-    - target: {fileID: 3469537784559172215, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.g
-      value: 0.12941177
-      objectReference: {fileID: 0}
-    - target: {fileID: 3469537784559172215, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.r
-      value: 0.19607845
-      objectReference: {fileID: 0}
-    - target: {fileID: 4170518526847852732, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 266.59998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4170518526847852732, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -138.80078
-      objectReference: {fileID: 0}
-    - target: {fileID: 4174713496728711937, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4174713496728711937, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1427582143, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
-    - target: {fileID: 4200649083610546273, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4678488803908224849, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4678488803908224849, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1030149112, guid: c79688c0af341e84baefa57cbd747eca, type: 3}
     - target: {fileID: 5216468433654760921, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
       propertyPath: m_Name
       value: MainMenuCanvas
@@ -958,60 +752,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5481923270241377942, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.b
-      value: 0.12941177
-      objectReference: {fileID: 0}
-    - target: {fileID: 5481923270241377942, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.g
-      value: 0.12941177
-      objectReference: {fileID: 0}
-    - target: {fileID: 5481923270241377942, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.r
-      value: 0.19215688
-      objectReference: {fileID: 0}
     - target: {fileID: 6862624865091143025, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1421385650}
-    - target: {fileID: 6862624865091143025, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateFullScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 6862624865091143025, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenusSystem.SceneSettings, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8193650277335510890, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9069170446545052447, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9069170446545052447, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 8128307476214861455, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 21300000, guid: f82e52680f73d3242ab63ecb46d01528, type: 3}
-    - target: {fileID: 9069170446545052447, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      propertyPath: m_Color.a
-      value: 1
+      objectReference: {fileID: 1421385650}
+    - target: {fileID: 8128307476214861455, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 950994280505515055, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-    - {fileID: 4545541419206037188, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 2478552078555708455, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-    - {fileID: 4794474186173335828, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5587874615041477827, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 964004062}
-    - targetCorrespondingSourceObject: {fileID: 515461587839728891, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 218199424}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
 --- !u!114 &1421385649 stripped
 MonoBehaviour:

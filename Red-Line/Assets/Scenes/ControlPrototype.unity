@@ -1030,17 +1030,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1909917755 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 525471934930820380, guid: 761390094dc502d429c3148756dd9725, type: 3}
-  m_PrefabInstance: {fileID: 5569851698555731436}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a8cdb53c9decdb47a93f5f0130fca63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2091155812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,43 +1260,68 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7942786366477726463, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942786366477726463, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942786366477726463, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1909917755}
-    - target: {fileID: 7942786366477726463, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942786366477726463, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Shoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942786366477726463, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: InputManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942786366477726463, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 9032570847906285317, guid: 761390094dc502d429c3148756dd9725, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 761390094dc502d429c3148756dd9725, type: 3}
+--- !u!1001 &7281654328983377992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520260016563551545, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284279884189795028, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
+      propertyPath: m_Name
+      value: StunShootPowerUp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cd66cd334baa1343aef64b627f0b3c5, type: 3}
 --- !u!1001 &8860293943730221071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1322,11 +1336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5363507669662920459, guid: 2fa54a049e4e8f94c9832dd88011f0a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.77
+      value: 13.8
       objectReference: {fileID: 0}
     - target: {fileID: 5363507669662920459, guid: 2fa54a049e4e8f94c9832dd88011f0a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: 5.74
       objectReference: {fileID: 0}
     - target: {fileID: 5363507669662920459, guid: 2fa54a049e4e8f94c9832dd88011f0a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1382,3 +1396,4 @@ SceneRoots:
   - {fileID: 2091155812}
   - {fileID: 4806342150108139844}
   - {fileID: 8860293943730221071}
+  - {fileID: 7281654328983377992}
