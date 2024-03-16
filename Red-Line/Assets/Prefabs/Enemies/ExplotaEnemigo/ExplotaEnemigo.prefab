@@ -764,6 +764,9 @@ MonoBehaviour:
           m_StringArgument: blood
           m_BoolArgument: 0
         m_CallState: 2
+  _onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &888604627142516366
 MonoBehaviour:
   m_ObjectHideFlags: 0

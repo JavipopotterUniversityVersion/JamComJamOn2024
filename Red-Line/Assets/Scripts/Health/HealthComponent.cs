@@ -11,9 +11,13 @@ public class HealthComponent : MonoBehaviour
     [SerializeField]
     private UnityEvent _dieEvent;
 
+    [SerializeField]
+    private UnityEvent _onTakeDamage;
+
     public void Damage(int damageNum)
     {
         _currentHealth = _currentHealth - damageNum;
+        _onTakeDamage?.Invoke();
 
         if (_currentHealth <= 0)
         {

@@ -147,6 +147,9 @@ MonoBehaviour:
   _dieEvent:
     m_PersistentCalls:
       m_Calls: []
+  _onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3954130364802661115
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1332410318513433739
 Transform:
   m_ObjectHideFlags: 0
@@ -1120,5 +1123,8 @@ MonoBehaviour:
   _maxHealth: 3
   _currentHealth: 3
   _dieEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTakeDamage:
     m_PersistentCalls:
       m_Calls: []
