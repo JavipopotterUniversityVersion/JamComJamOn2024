@@ -19,7 +19,11 @@ namespace InputSystem
         }
 
         private void OnPausedInputStarted(InputAction.CallbackContext obj) {
-            SwitchPause();
+
+            if (Time.timeScale == 1)
+            {
+                SwitchPause();
+            }
         }
 
         public void SwitchPause() {
