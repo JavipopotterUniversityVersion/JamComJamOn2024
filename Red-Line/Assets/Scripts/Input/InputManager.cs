@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,8 +8,6 @@ public class InputManager : MonoBehaviour
     JointController jointController;
     WebReleaser webReleaser;
     Dash dash;
-
-    private bool _controlsReversed = false;
 
 
     private void Awake() {
@@ -21,9 +18,7 @@ public class InputManager : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        int directionSense = (_controlsReversed) ? -1 : 1;
-
-        Vector2 direction = new Vector2(context.ReadValue<Vector2>().x * directionSense, 0);
+        Vector2 direction = new Vector2(context.ReadValue<Vector2>().x, 0);
         jointController.Move(direction);
     }
 
@@ -37,20 +32,6 @@ public class InputManager : MonoBehaviour
 
     public void ThrowWeb(InputAction.CallbackContext context)
     {
-        int directionSense = (_controlsReversed) ? -1 : 1;
-
-        webReleaser.ThrowWeb(context.ReadValue<Vector2>().y * directionSense);
-    }
-
-    public void ReverseControls(float seconds)
-    {
-        StartCoroutine(ReverseUnReverse(seconds));
-    }
-
-    private IEnumerator ReverseUnReverse(float seconds) 
-    {
-        _controlsReversed = !_controlsReversed;
-        yield return new WaitForSeconds(seconds);
-        _controlsReversed = !_controlsReversed;
+        webReleaser.ThrowWeb(context.ReadValue<Vector2>().y);
     }
 }
