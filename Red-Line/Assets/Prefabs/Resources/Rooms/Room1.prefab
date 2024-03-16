@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speedProvider: {fileID: 11400000, guid: 6c540e95625cdc74cb2c6e9314364977, type: 2}
   _direction: {x: -1, y: 0}
+  _parallaxFactor: 1
 --- !u!61 &3881438339982319662
 BoxCollider2D:
   m_ObjectHideFlags: 0
