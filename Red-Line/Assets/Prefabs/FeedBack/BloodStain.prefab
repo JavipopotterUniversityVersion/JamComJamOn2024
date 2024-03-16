@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8428740751507340159}
   - component: {fileID: 1631231082154446262}
   - component: {fileID: 2797479429914189477}
+  - component: {fileID: 6643089163688955269}
   m_Layer: 0
   m_Name: BloodStain
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8f32d1be0285f364eb90d7ac6c190b65, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2da80ed7e158f149a41b5e90fdd9bf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,8 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 6f87f71467ca844438b7ef8455317865, type: 3}
-  - {fileID: 21300000, guid: e01de3ca911ccd9418925d9bd6e6adec, type: 3}
+  - {fileID: 21300000, guid: a2da80ed7e158f149a41b5e90fdd9bf6, type: 3}
+  - {fileID: 21300000, guid: 72318dde0aa303543b94adc1750d21f8, type: 3}
+  - {fileID: 21300000, guid: 8863792c7befbb24582ed62764a8bda1, type: 3}
   randomOnEnable: 1
 --- !u!114 &2797479429914189477
 MonoBehaviour:
@@ -115,3 +117,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomOnEnable: 1
+--- !u!114 &6643089163688955269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996270124207333973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51425682224b6e43b74d75c99a6ba1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speedProvider: {fileID: 11400000, guid: 6c540e95625cdc74cb2c6e9314364977, type: 2}
+  _direction: {x: -1, y: 0}
+  _parallaxFactor: 0.5
