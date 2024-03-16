@@ -292,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberOfRooms: 5
   _queueLength: 2
+  _folder: Rooms
 --- !u!114 &2817102057124175794
 MonoBehaviour:
   m_ObjectHideFlags: 0
