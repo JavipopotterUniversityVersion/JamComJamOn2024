@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ControlPrototype.unity
     guid: d1af53ac4598a434e9db052dd79d6a4d
+  - enabled: 1
+    path: Assets/Scenes/Release/Game.unity
+    guid: 55b53ace6e013054095dfdac6eb1b10c
   m_configObjects: {}
