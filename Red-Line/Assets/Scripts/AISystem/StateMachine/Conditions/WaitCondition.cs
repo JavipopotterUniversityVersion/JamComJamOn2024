@@ -21,7 +21,7 @@ public class WaitCondition : MonoBehaviour, ICondition
         }
     }
 
-    private void Start()
+    private void OnValidate()
     {
         gameObject.name = "Wait "+ _waitTime + " sCondition";
     }

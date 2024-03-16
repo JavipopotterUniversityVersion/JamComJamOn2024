@@ -324,10 +324,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332410318513433739}
-  - component: {fileID: 1097753185315035520}
   - component: {fileID: 7704737270247126428}
   - component: {fileID: 2188258331124458096}
   - component: {fileID: 9162952251774023665}
+  - component: {fileID: 2909422002397210278}
   m_Layer: 6
   m_Name: DamageArea
   m_TagString: Untagged
@@ -350,48 +350,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7964753687598820879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1097753185315035520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4980840326329669789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 285145392b3917941bdf5d30415aa248, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  onCollide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
-        m_TargetAssemblyTypeName: CameraEffects, Assembly-CSharp
-        m_MethodName: Shake
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 3
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
-        m_TargetAssemblyTypeName: CameraEffects, Assembly-CSharp
-        m_MethodName: HitStop
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0.2
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!58 &7704737270247126428
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -500,7 +458,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -592,6 +550,22 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &2909422002397210278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980840326329669789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dec50c61aa00ed45a00f215fe0d8f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  damageAmount: 1
 --- !u!1 &6132004428776786307
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +856,7 @@ GameObject:
   - component: {fileID: 58179200430725213}
   - component: {fileID: 8573011692804133343}
   - component: {fileID: 7213346020295624088}
+  - component: {fileID: 7550944089428100219}
   m_Layer: 6
   m_Name: spider
   m_TagString: Untagged
@@ -1025,3 +1000,20 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     minVelocity: 25
+--- !u!114 &7550944089428100219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081159783653206178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79a9e4735cc9614b9481629f5c2b63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 3
+  _currentHealth: 3
+  _dieEvent:
+    m_PersistentCalls:
+      m_Calls: []

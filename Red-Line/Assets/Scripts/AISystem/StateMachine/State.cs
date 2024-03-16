@@ -20,7 +20,7 @@ public class State : MonoBehaviour
 
     private void Awake()
     {
-        animationPlayer = GetComponentInParent<AnimationPlayer>();
+        animationPlayer = GetComponentInParent<HealthComponent>().GetComponentInChildren<AnimationPlayer>();
         NextStatePerformer.InitializeAll(nextStates);
 
     }
