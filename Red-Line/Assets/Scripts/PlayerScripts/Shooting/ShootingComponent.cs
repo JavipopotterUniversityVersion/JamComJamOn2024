@@ -15,13 +15,16 @@ public class ShootingComponent : MonoBehaviour
 
 
 
+
     private void Awake()
     {
-        _myTransform = transform; 
+        _myTransform = transform;
+        this.enabled = false;
     }
 
     public void Shoot()
     {
+        
         IBullet bullet;
         if (_bulletStuns) bullet = Instantiate(_stunningBullet, _myTransform.position, Quaternion.identity).GetComponent<IBullet>();
         else bullet = Instantiate(_poisonBullet, _myTransform.position, Quaternion.identity).GetComponent<IBullet>();

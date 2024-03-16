@@ -9,7 +9,10 @@ public class HealthPowerUp : MonoBehaviour, IPowerUp
     [SerializeField] private int _health;
     public void Apply()
     {
-        _targetHealth.Heal(_health);
+        if (_targetHealth.CurrentHealth != _targetHealth.MaxHealth)
+        {
+            _targetHealth.Heal(_health);
+        }
         Destroy(this.gameObject);
     }
 

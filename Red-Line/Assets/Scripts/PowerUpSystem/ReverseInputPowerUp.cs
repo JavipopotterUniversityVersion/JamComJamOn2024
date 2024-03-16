@@ -14,7 +14,7 @@ public class ReverseInputPowerUp : MonoBehaviour, IPowerUp
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _playerInput = collision.GetComponentInChildren<InputManager>();
+        _playerInput = collision.GetComponentInParent<InputManager>();
         Apply();
     }
 }
