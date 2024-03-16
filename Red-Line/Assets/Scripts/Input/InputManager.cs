@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
     JointController jointController;
     WebReleaser webReleaser;
     Dash dash;
+    ShootingComponent shooter;
 
     private bool _controlsReversed = false;
 
@@ -18,6 +19,7 @@ public class InputManager : MonoBehaviour
         webReleaser = GetComponentInChildren<WebReleaser>();
         jointController = GetComponentInChildren<JointController>();
         dash = GetComponentInChildren<Dash>();
+        shooter = GetComponentInChildren<ShootingComponent>();
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -41,6 +43,14 @@ public class InputManager : MonoBehaviour
         int directionSense = (_controlsReversed) ? -1 : 1;
 
         webReleaser.ThrowWeb(context.ReadValue<Vector2>().y * directionSense);
+    }
+
+    public void Shoot(InputAction.CallbackContext context)
+    {
+        if (context.performed && shooter.enabled)
+        {
+            shooter.Shoot();
+        }
     }
 
     public void ReverseControls(float seconds)
