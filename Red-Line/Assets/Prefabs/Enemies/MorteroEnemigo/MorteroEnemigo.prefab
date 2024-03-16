@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cea6a7c29b5624eb3e58e9dc294545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateAnimation: 
+  stateAnimation: Shoot
   onEnterPerformers:
   - condition: []
     behaviourContainers:
@@ -323,7 +323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -731972850, guid: 776ae351259d9ac4b8833f23f20308a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc27e62989c39b640854ea709e420f20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -344,7 +344,7 @@ Animator:
   m_GameObject: {fileID: 2633249975632903652}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9269cc94efb07bb499c946dc1e6285de, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -613,6 +613,7 @@ GameObject:
   - component: {fileID: 6330591761725246205}
   - component: {fileID: 4134644162059061760}
   - component: {fileID: 3338927526122347223}
+  - component: {fileID: 5553969678320294562}
   m_Layer: 7
   m_Name: MorteroEnemigo
   m_TagString: Untagged
@@ -663,9 +664,72 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: blood
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: ee43f6c5b18e4074cae96611b63e4378, type: 2}
+        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
+        m_TargetAssemblyTypeName: CameraEffects, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 3
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
+        m_TargetAssemblyTypeName: CameraEffects, Assembly-CSharp
+        m_MethodName: HitStop
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.05
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5553969678320294562}
+        m_TargetAssemblyTypeName: PoolTaker, Assembly-CSharp
+        m_MethodName: TakeFromPool
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 339353361254067833, guid: 67b4c84161a388a4ea885c6ddcde1032, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.05
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5553969678320294562}
+        m_TargetAssemblyTypeName: PoolTaker, Assembly-CSharp
+        m_MethodName: TakeFromPool
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8450006086027095068, guid: a1e9b7f71fe5ef249ab6d4246a08a230, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.05
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &3338927526122347223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -711,6 +775,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5553969678320294562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050042924942645308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c648818175ef7b24cb745b50efe4faa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
 --- !u!1 &7048011915089135937
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cea6a7c29b5624eb3e58e9dc294545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateAnimation: 
+  stateAnimation: Idle
   onEnterPerformers: []
   onUpdatePerformers: []
   onExitPerformers: []
@@ -930,3 +1007,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whatToShoot: {fileID: 8387795090423527582, guid: e4b63308a8ed5d54a9bd672eac0572bb, type: 3}
+  maxRange: 1
+  height: 1
