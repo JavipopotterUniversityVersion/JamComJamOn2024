@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 3338927526122347223}
   - component: {fileID: 5553969678320294562}
   m_Layer: 7
-  m_Name: MorteroEnemigo
+  m_Name: Juanjo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
