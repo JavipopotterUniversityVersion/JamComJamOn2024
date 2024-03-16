@@ -113,6 +113,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a257d9d7-62f5-4537-a593-e10857817214
     m_ActionName: PauseGame/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4c9d53d1-6cd8-4e55-bd05-23c712668840
+    m_ActionName: Playing/Shoot[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Playing
@@ -286,7 +290,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.83, y: 1.83, z: 1.83}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7964753687598820879}
@@ -1061,7 +1065,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
 --- !u!114 &7213346020295624088
 MonoBehaviour:
   m_ObjectHideFlags: 0
