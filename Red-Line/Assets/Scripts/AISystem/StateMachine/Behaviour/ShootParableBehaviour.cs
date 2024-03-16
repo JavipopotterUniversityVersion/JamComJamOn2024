@@ -17,8 +17,6 @@ public class ShootParableBehaviour : MonoBehaviour, IBehaviour
     {
         GameObject objetico = 
         Instantiate(_whatToShoot, _myTransform.position, Quaternion.identity);
-
-        objetico.GetComponent<ParableBulletComponent>().SetDirection(new Vector3(1,1,0));
     }
 
     private void Awake()
