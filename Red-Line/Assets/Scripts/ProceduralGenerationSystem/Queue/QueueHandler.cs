@@ -8,13 +8,13 @@ namespace ProceduralGenerationSystem.Queue
     internal class QueueHandler : MonoBehaviour
     {
         [SerializeField] private int _numberOfRooms, _queueLength;
-
+        [SerializeField] private string _folder;
         private GameObject[] _rooms; 
         private Queue<GameObject> _roomQueue;
 
         private void Awake()
         {
-            _rooms = Resources.LoadAll<GameObject>("Rooms");
+            _rooms = Resources.LoadAll<GameObject>(_folder);
             _roomQueue = new Queue<GameObject>();
 
             for (int i = 0; i < _queueLength; i++) EnqueueNewRoom();
