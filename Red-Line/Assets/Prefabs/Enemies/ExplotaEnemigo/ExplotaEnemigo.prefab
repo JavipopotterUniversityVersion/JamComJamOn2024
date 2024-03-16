@@ -336,7 +336,6 @@ Transform:
   m_Children:
   - {fileID: 4655181363195033131}
   - {fileID: 2021044788827079204}
-  - {fileID: 8777400411835673580}
   - {fileID: 4638672097053819085}
   - {fileID: 7805941818702792185}
   m_Father: {fileID: 4615948595046347587}
@@ -487,53 +486,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _damage: 1
---- !u!1 &4083746566606868557
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8777400411835673580}
-  - component: {fileID: 2714561591872156450}
-  m_Layer: 7
-  m_Name: InstantiateBehaviour ExplotaEnemigoCachos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8777400411835673580
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4083746566606868557}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7328770936567236352}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2714561591872156450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4083746566606868557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9efb3f281f529a94890fb98c1b86e363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _prefab: {fileID: 5119275176150201148, guid: 9412a452cfe1dc2449e203adf53c1020, type: 3}
-  _instantiatePosition: {fileID: 0}
-  instanceVelocity: 0
 --- !u!1 &4103183667420110983
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +498,7 @@ GameObject:
   - component: {fileID: 6805278818518589538}
   - component: {fileID: 9043190173604624923}
   m_Layer: 7
-  m_Name: Take blood
+  m_Name: 'PoolBehaviour: blood, balloonParts, '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -592,7 +544,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 134c6cc555cf7f644999a7367fc5c7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolTag: blood
+  poolTag:
+  - blood
+  - balloonParts
 --- !u!1 &5030536555824293185
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,22 +646,10 @@ MonoBehaviour:
   _dieEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2714561591872156450}
-        m_TargetAssemblyTypeName: InstantiateBehaviour, Assembly-CSharp
+      - m_Target: {fileID: 9043190173604624923}
+        m_TargetAssemblyTypeName: PoolBehaviour, Assembly-CSharp
         m_MethodName: ExecuteBehaviour
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 888604627142516366}
-        m_TargetAssemblyTypeName: PoolTaker, Assembly-CSharp
-        m_MethodName: TakeFromPool
-        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -935,7 +877,6 @@ MonoBehaviour:
   onEnterPerformers:
   - condition: []
     behaviourContainers:
-    - {fileID: 4083746566606868557}
     - {fileID: 4103183667420110983}
     - {fileID: 7322108985748731716}
     - {fileID: 5030536555824293185}

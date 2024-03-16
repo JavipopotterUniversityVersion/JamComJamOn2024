@@ -906,6 +906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2372531415392226674}
   - component: {fileID: 4982303388521468502}
+  - component: {fileID: -9103362256202212632}
   m_Layer: 0
   m_Name: ExplotaEnemigoCachos
   m_TagString: Untagged
@@ -953,6 +954,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: {x: 10, y: 20}
+--- !u!114 &-9103362256202212632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5119275176150201148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bda266e852c901479c2841ffcd354a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deactivateTime: 4
 --- !u!1 &5543524470170097039
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,5 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolObjects:
   - tag: blood
-    prefab: {fileID: 0}
+    prefab: {fileID: 339353361254067833, guid: 67b4c84161a388a4ea885c6ddcde1032, type: 3}
     size: 5
+  - tag: balloonParts
+    prefab: {fileID: 5119275176150201148, guid: 9412a452cfe1dc2449e203adf53c1020, type: 3}
+    size: 8
