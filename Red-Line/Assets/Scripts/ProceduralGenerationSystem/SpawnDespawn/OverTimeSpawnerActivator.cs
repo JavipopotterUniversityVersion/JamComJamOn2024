@@ -19,7 +19,6 @@ namespace ProceduralGenerationSystem.SpawnDespawn
 
         private void SpawnRoom()
         {
-            Debug.Log(_spawner);
             _spawner.InstantiateNewRoom();
         }
 
