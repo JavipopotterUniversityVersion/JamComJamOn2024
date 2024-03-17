@@ -631,6 +631,18 @@ MonoBehaviour:
           m_StringArgument: blood
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 18f8e8153372df840a36202094a79c1c, type: 2}
+        m_TargetAssemblyTypeName: Score, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0.05
+          m_StringArgument: blood
+          m_BoolArgument: 0
+        m_CallState: 2
   _onTakeDamage:
     m_PersistentCalls:
       m_Calls: []
