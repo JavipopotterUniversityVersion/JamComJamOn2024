@@ -332,6 +332,7 @@ Transform:
   m_Children:
   - {fileID: 7164965901501833889}
   - {fileID: 8769928460145745746}
+  - {fileID: 4488690056272811633}
   m_Father: {fileID: 4615948595046347587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3722872357830781572
@@ -542,7 +543,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 888604627142516366}
         m_TargetAssemblyTypeName: PoolTaker, Assembly-CSharp
-        m_MethodName: TakeFromPool
+        m_MethodName: 
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2538536520283813473, guid: baf253b8f678da645aea3d0d0acca284, type: 3}
@@ -600,10 +601,10 @@ MonoBehaviour:
           m_StringArgument: blood
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 18f8e8153372df840a36202094a79c1c, type: 2}
-        m_TargetAssemblyTypeName: Score, Assembly-CSharp
-        m_MethodName: AddScore
-        m_Mode: 3
+      - m_Target: {fileID: 140460259891733418}
+        m_TargetAssemblyTypeName: DestroyMeBehaviour, Assembly-CSharp
+        m_MethodName: ExecuteBehaviour
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -799,6 +800,51 @@ MonoBehaviour:
     - conditionContainer: {fileID: 6056648987347972228}
       negated: 1
     stateContainer: {fileID: 1339072243384137749}
+--- !u!1 &6162154667480842906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4488690056272811633}
+  - component: {fileID: 140460259891733418}
+  m_Layer: 0
+  m_Name: DestroyMeBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4488690056272811633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6162154667480842906}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7328770936567236352}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140460259891733418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6162154667480842906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba710b8c35399948a6d4ef79a097a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fokingObjectToDestroy: {fileID: 5031662594446803402}
 --- !u!1 &6333122626528740596
 GameObject:
   m_ObjectHideFlags: 0

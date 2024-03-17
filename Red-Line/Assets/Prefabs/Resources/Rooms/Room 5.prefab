@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 2545682743946572547}
   - component: {fileID: 8586138771100076898}
   m_Layer: 0
-  m_Name: "Random: \n-DisparaEnemigo\n-FlechaEnemigo\n"
+  m_Name: "Random: \n-DisparaEnemigo\n-FlechaEnemigo\n-HealhPowerUp\n"
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 5031662594446803402, guid: adf075e5147cbc649aeedc426a6ee21f, type: 3}
   - {fileID: 5031662594446803402, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+  - {fileID: 6459481752522155788, guid: 87a9080d18ae40644976147476d6695d, type: 3}
 --- !u!1001 &966965098532327323
 PrefabInstance:
   m_ObjectHideFlags: 0

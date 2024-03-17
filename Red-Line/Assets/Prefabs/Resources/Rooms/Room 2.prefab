@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 8998626775912013263}
   - component: {fileID: 4036857756494452448}
   m_Layer: 0
-  m_Name: "Random: \n-ExplotaEnemigo\n-FlechaEnemigo\n-DisparaEnemigo\n"
+  m_Name: "Random: \n-ExplotaEnemigo\n-FlechaEnemigo\n-DisparaEnemigo\n-RevertPowerUp\n"
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -146,6 +146,7 @@ MonoBehaviour:
   - {fileID: 5031662594446803402, guid: e39a43b663155474aab2e307205017f6, type: 3}
   - {fileID: 5031662594446803402, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
   - {fileID: 5031662594446803402, guid: adf075e5147cbc649aeedc426a6ee21f, type: 3}
+  - {fileID: 994071983574019660, guid: 4e78f6cef4475f34d8414d1fcb03f16e, type: 3}
 --- !u!1001 &1520944673727404245
 PrefabInstance:
   m_ObjectHideFlags: 0
