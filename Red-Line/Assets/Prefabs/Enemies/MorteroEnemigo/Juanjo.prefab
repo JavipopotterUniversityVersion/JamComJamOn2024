@@ -947,8 +947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whatToShoot: {fileID: 8387795090423527582, guid: e4b63308a8ed5d54a9bd672eac0572bb, type: 3}
-  maxRange: 1
-  height: 1
+  maxRange: 6
+  height: 10
 --- !u!1 &8439472936854744662
 GameObject:
   m_ObjectHideFlags: 0
