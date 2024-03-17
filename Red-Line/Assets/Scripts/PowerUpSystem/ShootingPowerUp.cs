@@ -17,7 +17,7 @@ public class ShootingPowerUp : MonoBehaviour, IPowerUp
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _shootingComponent = collision.gameObject.GetComponentInChildren<ShootingComponent>();
+        _shootingComponent = collision.gameObject.GetComponentInParent<InputManager>().GetComponentInChildren<ShootingComponent>();
         Apply();
     }
 }

@@ -18,7 +18,7 @@ public class HealthPowerUp : MonoBehaviour, IPowerUp
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _targetHealth = collision.gameObject.GetComponentInChildren<HealthComponent>();
+        _targetHealth = collision.gameObject.GetComponentInParent<InputManager>().GetComponentInChildren<HealthComponent>();
         Apply();
     }
 }
