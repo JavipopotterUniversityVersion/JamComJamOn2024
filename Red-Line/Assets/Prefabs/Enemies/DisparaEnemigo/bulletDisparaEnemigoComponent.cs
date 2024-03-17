@@ -22,7 +22,6 @@ public class bulletDisparaEnemigoComponent : MonoBehaviour
     private void Awake()
     {
         _myTransform = transform;
-        _myTransform.localPosition = Vector3.zero;
         StartCoroutine(MuerePuta());
     }
 

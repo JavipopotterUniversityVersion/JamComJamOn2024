@@ -14,7 +14,7 @@ public class DisparaEnemigoShootBehaviour : MonoBehaviour, IBehaviour
 
         for (int i =0; i < currentBullets.Length; i++)
         {
-            currentBullets[i] = Instantiate(_bulletPrefab, _myTransform);
+            currentBullets[i] = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
         }
 
         currentBullets[0].GetComponent<bulletDisparaEnemigoComponent>().SetDirection(new Vector2 (1,1));
