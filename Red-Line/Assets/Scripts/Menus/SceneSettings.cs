@@ -22,7 +22,7 @@ namespace MenusSystem
         [SerializeField]
         private Toggle _fullScreenToggle;
 
-        void Start()
+        private void Awake()
         {
             //sound
             _soundSlider.value = PlayerPrefs.GetFloat("audioVolume", 0.5f);
@@ -30,7 +30,15 @@ namespace MenusSystem
             ShowSoundImage();
 
             //full screen
-            CheckFullScreen();
+            
+            if(Screen.fullScreen)
+            {
+                _fullScreenToggle.isOn = true;
+            }
+            else
+            {
+                _fullScreenToggle.isOn = false;
+            }
         }
 
 
@@ -44,16 +52,9 @@ namespace MenusSystem
 
         }
 
-        public void CheckFullScreen()
+        public bool CheckFullScreen()
         {
-            if (Screen.fullScreen)
-            {
-                _fullScreenToggle.isOn = true;
-            }
-            else
-            {
-                _fullScreenToggle.isOn = false;
-            }
+            return Screen.fullScreen;
         }
 
         public void ShowSoundImage()
@@ -81,5 +82,10 @@ namespace MenusSystem
             Time.timeScale = 1;
         }
 
+
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
     }
 }
