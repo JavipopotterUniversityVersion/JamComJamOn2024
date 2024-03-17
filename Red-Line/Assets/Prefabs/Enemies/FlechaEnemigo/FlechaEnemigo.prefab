@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 304579969006629399}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -109,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3918ac9fa7ed5fc47b3d2de30e71455d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,7 +130,7 @@ Animator:
   m_GameObject: {fileID: 304579969006629399}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1818e57c294554468a946b746d0e3f2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
   _whatLayerToDetect:
     serializedVersion: 2
     m_Bits: 64
-  _speed: 1
+  _speed: 10
   _damage: 1
   parentTransform: {fileID: 2509959745418390585}
 --- !u!1 &3388187333602784447
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cea6a7c29b5624eb3e58e9dc294545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateAnimation: 
+  stateAnimation: Idle
   onEnterPerformers: []
   onUpdatePerformers: []
   onExitPerformers: []
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c7abea7f7cede43ab5b85b7d3f316e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _detectionRadius: 3
+  _detectionRadius: 8.79
   _whatLayerToDetect:
     serializedVersion: 2
     m_Bits: 64
@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 888604627142516366}
   - component: {fileID: 1685028328101545096}
   - component: {fileID: -8597360242572069396}
+  - component: {fileID: 7155208177012128485}
   m_Layer: 7
   m_Name: FlechaEnemigo
   m_TagString: Untagged
@@ -655,6 +656,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7155208177012128485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031662594446803402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dec50c61aa00ed45a00f215fe0d8f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  damageAmount: 1
 --- !u!1 &6872264393437973910
 GameObject:
   m_ObjectHideFlags: 0

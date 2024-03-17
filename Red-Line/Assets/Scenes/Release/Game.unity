@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &156549579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.178524
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.4622927
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509959745418390585, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031662594446803402, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
+      propertyPath: m_Name
+      value: FlechaEnemigo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ab6d6e6a57fb254b9ee9cc4d3b39c63, type: 3}
 --- !u!1 &518256207
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +707,7 @@ GameObject:
   - component: {fileID: 1360476153}
   - component: {fileID: 1360476152}
   - component: {fileID: 1360476151}
+  - component: {fileID: 1360476155}
   m_Layer: 0
   m_Name: VC
   m_TagString: Untagged
@@ -739,6 +797,20 @@ Transform:
   - {fileID: 1307080927}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360476155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360476150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69d54b07644b5a41b4afc6176da85a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraEffects: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
+  duration: 0.2
 --- !u!1001 &1392903002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1071,6 +1143,7 @@ GameObject:
   - component: {fileID: 1927729389}
   - component: {fileID: 1927729388}
   - component: {fileID: 1927729392}
+  - component: {fileID: 1927729393}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1110,7 +1183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 0.1
-  backDuration: 0.1
+  backDuration: 2
+  initMult: 0.8
 --- !u!114 &1927729389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1129,6 +1203,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1927729388}
         m_TargetAssemblyTypeName: ScaleFlash, Assembly-CSharp
+        m_MethodName: Flash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1927729393}
+        m_TargetAssemblyTypeName: ColorFlash, Assembly-CSharp
         m_MethodName: Flash
         m_Mode: 0
         m_Arguments:
@@ -1222,7 +1308,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -501.46484, y: 0, z: 0, w: -49.38669}
+  m_margin: {x: -501.46484, y: 0, z: 0, w: -156.96126}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1251,6 +1337,50 @@ MonoBehaviour:
   _speedProvider: {fileID: 11400000, guid: 6c540e95625cdc74cb2c6e9314364977, type: 2}
   _score: {fileID: 11400000, guid: 18f8e8153372df840a36202094a79c1c, type: 2}
   maxSpeed: 10
+--- !u!114 &1927729393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927729386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f65cf8b626c9d4d8df3fee00049737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 0.26666665, g: 0.9928847, b: 1, a: 1}
+    key2: {r: 0.2679245, g: 0.6350793, b: 1, a: 0}
+    key3: {r: 0.5577507, g: 0, b: 1, a: 0}
+    key4: {r: 1, g: 0.019366156, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 1542
+    ctime1: 6554
+    ctime2: 13107
+    ctime3: 19661
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 1
+    m_ColorSpace: -1
+    m_NumColorKeys: 5
+    m_NumAlphaKeys: 2
+  FlashDuration: 0.1
+  backDuration: 2
 --- !u!1 &1933693868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5167861309115990556, guid: b812f032d8aae7d408c7de36e8af1d8f, type: 3}
@@ -1507,3 +1637,4 @@ SceneRoots:
   - {fileID: 1345385599}
   - {fileID: 1603072314}
   - {fileID: 518256211}
+  - {fileID: 156549579}
