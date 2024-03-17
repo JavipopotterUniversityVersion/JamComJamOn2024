@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class RandomRotation : MonoBehaviour
 {
-    [SerializeField] bool randomOnEnable = true;
-
     private void OnEnable() 
     {
-        if (randomOnEnable) 
-        {
-            RandomizeRotation();
-        }
+        StartCoroutine(waitAndRandomizeRotation());
+    }
+
+    IEnumerator waitAndRandomizeRotation()
+    {
+        yield return new WaitForEndOfFrame();
+        RandomizeRotation();
     }
 
     public void RandomizeRotation() 

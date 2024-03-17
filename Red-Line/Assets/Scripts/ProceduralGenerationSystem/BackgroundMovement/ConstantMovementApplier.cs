@@ -9,7 +9,7 @@ namespace ProceduralGenerationSystem.BackgroundMovement
     {
         [SerializeField] private TestSpeedProviderObject _speedProvider;
         [SerializeField] private Vector2 _direction;
-        private float _parallaxFactor;
+        [SerializeField] private float _parallaxFactor;
         private Transform _transform;
 
         public float ParallaxFactor {set => _parallaxFactor = value;}
