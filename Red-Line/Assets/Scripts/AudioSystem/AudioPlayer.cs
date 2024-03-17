@@ -18,7 +18,7 @@ public class AudioPlayer : ScriptableObject
     [SerializeField] private SoundClipOrder playOrder;
     [SerializeField] private bool loop;
 
-    private UnityEvent<AudioClip, float, float, bool> _onAudioPlay;
+    private UnityEvent<AudioClip, float, float, bool> _onAudioPlay = new UnityEvent<AudioClip, float, float, bool>();
     public UnityEvent<AudioClip, float, float, bool> OnAudioPlay => _onAudioPlay;
 
     private UnityEvent onAudioStop = new UnityEvent();

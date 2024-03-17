@@ -10,7 +10,10 @@ public class DamageOnTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(targetLayer == (targetLayer | (1 << other.gameObject.layer)))
         {
-            other.GetComponent<HealthComponent>().Damage(damageAmount);
+            if(other.TryGetComponent(out HealthComponent healthComponent))
+            {
+                healthComponent.Damage(damageAmount);
+            }
         }
     }
 }
