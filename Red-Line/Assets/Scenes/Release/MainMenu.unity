@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 301732565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 337220111}
+        m_TargetAssemblyTypeName: MenusSystem.SceneSettings, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &301732565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,6 +704,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5485429733887935238, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6626989541514392103, guid: 4cf65c901c38c06428850c2310dc25d6, type: 3}
       propertyPath: m_Name
       value: BackButton
@@ -1119,5 +1135,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1500928760}
   - {fileID: 565160925}
-  - {fileID: 6694974623392516017}
   - {fileID: 780503418}
+  - {fileID: 6694974623392516017}
