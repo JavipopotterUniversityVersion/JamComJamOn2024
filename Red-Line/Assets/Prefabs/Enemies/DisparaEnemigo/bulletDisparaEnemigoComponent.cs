@@ -16,12 +16,13 @@ public class bulletDisparaEnemigoComponent : MonoBehaviour
 
     private void Update()
     {
-        _myTransform.position = (Vector2)_myTransform.position + _direction * _speed * Time.deltaTime;
+        _myTransform.localPosition = (Vector2)_myTransform.localPosition + _direction * _speed * Time.deltaTime;
     }
 
     private void Awake()
     {
         _myTransform = transform;
+        _myTransform.localPosition = Vector3.zero;
         StartCoroutine(MuerePuta());
     }
 
