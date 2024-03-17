@@ -14,6 +14,9 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
     float _speed = 1;
 
     [SerializeField]
+    int _damage = 1;
+
+    [SerializeField]
     Transform parentTransform;
     bool _gotDirection;
     Vector3 _direction;
@@ -34,5 +37,14 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
 
         parentTransform.position = parentTransform.position + _direction * Time.deltaTime * _speed;
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<MovementStopper>() != null && collision.TryGetComponent<HealthComponent>(out HealthComponent a))
+        {
+            a.Damage(_damage);
+            Destroy(parentTransform.gameObject);
+        }
     }
 }
