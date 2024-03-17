@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioPerformer : MonoBehaviour
@@ -37,6 +38,7 @@ public class AudioPerformer : MonoBehaviour
                 );
 
                 _audioPlayer[i].OnAudioStop.AddListener(() => currentSource.Stop());
+                _audioPlayer[i].AudioDistort.AddListener(() => currentSource.AddComponent<SoundProcessor>().DistortSound());
             }
         }
     }

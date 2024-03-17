@@ -24,6 +24,9 @@ public class AudioPlayer : ScriptableObject
     private UnityEvent onAudioStop = new UnityEvent();
     public UnityEvent OnAudioStop => onAudioStop;
 
+    UnityEvent audioDistort = new UnityEvent();
+    public UnityEvent AudioDistort => audioDistort;
+
 
     private AudioClip audioClip()
     {
@@ -68,6 +71,8 @@ public class AudioPlayer : ScriptableObject
     }
 
     public void Stop() => onAudioStop?.Invoke();
+
+    public void Distort() => audioDistort?.Invoke();
 
     enum SoundClipOrder
     {
