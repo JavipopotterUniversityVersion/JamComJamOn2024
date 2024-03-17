@@ -8,7 +8,7 @@ public class ScoreUpdaterByGameSpeed : MonoBehaviour
     [SerializeField] TestSpeedProviderObject _speedProvider;
     [SerializeField] Score _score;
     int lastScore = 0;
-    [SerializeField] float maxSpeed = 10;
+    [SerializeField] float maxSpeed = 15;
     private void Awake() 
     {
         _speedProvider.Speed = 1;
@@ -17,7 +17,7 @@ public class ScoreUpdaterByGameSpeed : MonoBehaviour
     }
 
     private void Update() {
-        _speedProvider.Speed += Time.deltaTime / (_speedProvider.Speed * 2);
+        if(_speedProvider.Speed < 15) _speedProvider.Speed += Time.deltaTime / (_speedProvider.Speed * 2);
     }
 
     IEnumerator SpeedUpdate()

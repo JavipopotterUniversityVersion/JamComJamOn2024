@@ -13,8 +13,6 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
     [SerializeField]
     float _speed = 1;
 
-    [SerializeField]
-    int _damage = 1;
 
     [SerializeField]
     Transform parentTransform;
