@@ -357,9 +357,9 @@ MonoBehaviour:
   _whatLayerToDetect:
     serializedVersion: 2
     m_Bits: 64
-  _speed: 10
+  _speed: 30
   parentTransform: {fileID: 2509959745418390585}
-  _weight: 0.49
+  _weight: 0.7
 --- !u!1 &3388187333602784447
 GameObject:
   m_ObjectHideFlags: 0

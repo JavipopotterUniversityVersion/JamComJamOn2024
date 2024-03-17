@@ -14,6 +14,9 @@ public class CameraEffects : ScriptableObject
 
     UnityEvent<Shader> onShaderChange = new UnityEvent<Shader>();
     public UnityEvent<Shader> OnShaderChange => onShaderChange;
+
+    UnityEvent<float, float> onVignetteChange = new UnityEvent<float, float>();
+    public UnityEvent<float, float> OnVignetteChange => onVignetteChange;
     
     public void Shake(float shakeValue) => shakeEvent.Invoke(shakeValue);
     public void HitStop(float hitStopValue) => onHitStop.Invoke(hitStopValue);

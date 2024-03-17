@@ -14,15 +14,26 @@ public class HealthComponent : MonoBehaviour
     [SerializeField]
     private UnityEvent _onTakeDamage;
 
+    UnityEvent<int> onLifeChanged = new UnityEvent<int>();
+    public UnityEvent<int> OnLifeChanged => onLifeChanged;
+
     public int MaxHealth { get => _maxHealth; set => _maxHealth = value; }
-    public int CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
+    public int CurrentHealth 
+    { 
+        get => _currentHealth; 
+        set 
+        {
+            onLifeChanged.Invoke(value);
+            _currentHealth = value; 
+        }
+    }
 
     public void Damage(int damageNum)
     {
-        _currentHealth = _currentHealth - damageNum;
+        CurrentHealth = CurrentHealth - damageNum;
         _onTakeDamage?.Invoke();
 
-        if (_currentHealth <= 0)
+        if (CurrentHealth <= 0)
         {
             _dieEvent.Invoke();
         }
@@ -30,16 +41,16 @@ public class HealthComponent : MonoBehaviour
 
     public void Heal(int healNum)
     {
-        _currentHealth += healNum;
-        if ( _currentHealth > _maxHealth )
+        CurrentHealth += healNum;
+        if ( CurrentHealth > _maxHealth )
         {
-            _currentHealth = _maxHealth;
+            CurrentHealth = _maxHealth;
         }
     }
 
     private void Awake()
     {
-        _currentHealth = _maxHealth;
+        CurrentHealth = _maxHealth;
     }
 }
 

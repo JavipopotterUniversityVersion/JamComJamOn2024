@@ -261,9 +261,7 @@ MonoBehaviour:
   onUpdatePerformers: []
   onExitPerformers: []
   nextStates:
-  - conditions:
-    - conditionContainer: {fileID: 5927805278815132695}
-      negated: 0
+  - conditions: []
     stateContainer: {fileID: 8697404937878717572}
 --- !u!1 &2781502690664085252
 GameObject:
@@ -1116,12 +1114,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateAnimation: Explode
-  onEnterPerformers:
+  onEnterPerformers: []
+  onUpdatePerformers: []
+  onExitPerformers:
   - condition: []
     behaviourContainers:
     - {fileID: 3897843990343499680}
-  onUpdatePerformers: []
-  onExitPerformers: []
   nextStates:
   - conditions:
     - conditionContainer: {fileID: 2781502690664085252}
