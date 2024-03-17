@@ -13,6 +13,11 @@ public class HealthPowerUp : MonoBehaviour, IPowerUp
 
     public void Apply()
     {
+        if (_targetHealth == null)
+        {
+            return;
+        }
+        
         if (_targetHealth.CurrentHealth != _targetHealth.MaxHealth)
         {
             powerUPEvent.Invoke();
@@ -23,10 +28,7 @@ public class HealthPowerUp : MonoBehaviour, IPowerUp
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.TryGetComponent(out HealthComponent healthComponent))
-        {
-            _targetHealth = healthComponent;
-        }
+        _targetHealth = collision.gameObject.GetComponentInParent<InputManager>().GetComponentInChildren<HealthComponent>();
         Apply();
     }
 }
