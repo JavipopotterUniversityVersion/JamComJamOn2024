@@ -7,7 +7,10 @@ public class StunningBullet : MonoBehaviour, IBullet
     [SerializeField] private float _speed;
 
     private Transform _transform;
-    private Vector2 _direction;
+    private Vector2 _direction = Vector2.right;
+
+    [SerializeField]
+    private float _stunDuration = 100000;
 
     private void Awake()
     {
@@ -19,9 +22,10 @@ public class StunningBullet : MonoBehaviour, IBullet
         _transform.position += (Vector3)_direction * _speed * Time.deltaTime;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         //stunea
+        collision.GetComponentInChildren<StunCondition>().Stun(_stunDuration);
         Destroy(gameObject);
     }
 
