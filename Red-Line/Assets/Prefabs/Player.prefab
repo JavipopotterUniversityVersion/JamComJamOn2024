@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 2188258331124458096}
   - component: {fileID: 9162952251774023665}
   - component: {fileID: 2909422002397210278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DamageArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 6581335111377638552}
   - component: {fileID: 9154626746518037504}
   - component: {fileID: 4221607933573428562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1148,6 +1148,30 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: e171fe1568b5218408634780d9f34fea, type: 2}
         m_TargetAssemblyTypeName: GlobalStateManager, Assembly-CSharp
         m_MethodName: Death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: FinalScoreDisplayer, Assembly-CSharp
+        m_MethodName: UpdateDeathText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 18f8e8153372df840a36202094a79c1c, type: 2}
+        m_TargetAssemblyTypeName: Score, Assembly-CSharp
+        m_MethodName: PlayerHasDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
