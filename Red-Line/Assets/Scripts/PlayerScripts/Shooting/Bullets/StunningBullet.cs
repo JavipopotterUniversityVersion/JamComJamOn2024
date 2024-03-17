@@ -24,7 +24,6 @@ public class StunningBullet : MonoBehaviour, IBullet
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //stunea
         collision.GetComponentInChildren<StunCondition>().Stun(_stunDuration);
         Destroy(gameObject);
     }
