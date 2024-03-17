@@ -10,6 +10,7 @@ public class DrunkPerformer : MonoBehaviour
     [SerializeField] VolumeProfile _volumeProfile;
     ColorAdjustments _colorAdjustments;
     LensDistortion _lensDistortion;
+    UnityEngine.Rendering.Universal.ChromaticAberration _chromaticAberration;
 
     private void Awake() 
     {
@@ -18,6 +19,9 @@ public class DrunkPerformer : MonoBehaviour
 
         _volumeProfile.TryGet(out LensDistortion lensDistortion);
         _lensDistortion = lensDistortion;
+
+        _volumeProfile.TryGet(out UnityEngine.Rendering.Universal.ChromaticAberration chromaticAberration);
+        _chromaticAberration = chromaticAberration;
 
         _cameraEffects.OnDrunkEffect.AddListener((float duration) => StartCoroutine(DrunkEffect(duration)));
     }
@@ -40,7 +44,9 @@ public class DrunkPerformer : MonoBehaviour
     {
         _colorAdjustments.active = true;
         _lensDistortion.active = true;
+        _chromaticAberration.intensity.value = 0.75f;
         yield return new WaitForSeconds(duration);
+        _chromaticAberration.intensity.value = 0;
         _colorAdjustments.active = false;
         _lensDistortion.active = false;
     }
