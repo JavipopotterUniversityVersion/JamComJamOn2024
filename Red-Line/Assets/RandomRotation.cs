@@ -16,6 +16,6 @@ public class RandomRotation : MonoBehaviour
 
     public void RandomizeRotation() 
     {
-        transform.Rotate(new Vector3(0, Random.Range(0, 360), 0));
+        transform.Rotate(new Vector3(0, 0, Random.Range(0, 360)));
     }
 }
