@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4441192234434493192}
   - component: {fileID: 7204245049485000910}
   m_Layer: 0
-  m_Name: 'Random: ExplotaEnemigo, FlechaEnemigo, '
+  m_Name: "Random: \n-ExplotaEnemigo\n-FlechaEnemigo\n"
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speedProvider: {fileID: 11400000, guid: 6c540e95625cdc74cb2c6e9314364977, type: 2}
   _direction: {x: -1, y: 0}
-  _parallaxFactor: 1
 --- !u!1 &8134964196837602417
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +153,7 @@ GameObject:
   - component: {fileID: 7481814270595932721}
   - component: {fileID: 6944476925308863422}
   m_Layer: 0
-  m_Name: 'Random: ExplotaEnemigo, FlechaEnemigo, '
+  m_Name: "Random: \n-ExplotaEnemigo\n-FlechaEnemigo\n"
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -216,7 +215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6330591761725246205, guid: 5345f40fa50515a468bace3be028ee37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: -0.413
       objectReference: {fileID: 0}
     - target: {fileID: 6330591761725246205, guid: 5345f40fa50515a468bace3be028ee37, type: 3}
       propertyPath: m_LocalPosition.z
