@@ -18,33 +18,28 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
 
     [SerializeField]
     Transform parentTransform;
-    bool _gotDirection;
     Vector3 _direction;
-    public void ExecuteBehaviour()
+    Rigidbody2D rb;
+
+    [Range(0,1)]
+    [SerializeField]
+    float _weight;
+
+    private void Awake()
     {
-        if(!_gotDirection)
-        {
-            Collider2D collider = Physics2D.OverlapCircle(transform.position, _detectionRadius, _whatLayerToDetect.value);
-            if (collider != null)
-            {
-                _direction = (collider.transform.position - transform.position).normalized;
-                _gotDirection = true;
-
-               parentTransform.rotation = Quaternion.Euler(0,0,Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg);
-                
-            }
-        }
-
-        parentTransform.position = parentTransform.position + _direction * Time.deltaTime * _speed;
-
+        rb = GetComponentInParent<Rigidbody2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void ExecuteBehaviour()
     {
-        if (collision.GetComponent<MovementStopper>() != null && collision.TryGetComponent<HealthComponent>(out HealthComponent a))
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, _detectionRadius, _whatLayerToDetect.value);
+        if (collider != null)
         {
-            a.Damage(_damage);
-            Destroy(parentTransform.gameObject);
+            _direction = (collider.transform.position - transform.position).normalized;
+            parentTransform.rotation = Quaternion.Euler(0,0,Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg);
+            
         }
+
+        rb.velocity = Vector2.Lerp(rb.velocity.normalized, _direction, Time.deltaTime * _weight) * _speed;
     }
 }
