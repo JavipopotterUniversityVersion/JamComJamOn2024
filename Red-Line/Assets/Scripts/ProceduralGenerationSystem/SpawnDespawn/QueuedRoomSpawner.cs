@@ -10,9 +10,9 @@ namespace ProceduralGenerationSystem.SpawnDespawn
         [SerializeField] private Transform _roomSpawnPoint;
         [SerializeField] private QueueHandler _queueHandler;
 
-        public void InstantiateNewRoom()
+        public GameObject InstantiateNewRoom()
         {
-            Instantiate(_queueHandler.UpdateQueue(), _roomSpawnPoint);
+            return Instantiate(_queueHandler.UpdateQueue(), _roomSpawnPoint);
         }
     }
 }
