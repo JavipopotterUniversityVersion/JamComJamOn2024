@@ -12,7 +12,10 @@ public class RandomInstanceOnPoint : MonoBehaviour
     
     public void Spawn(Transform transform)
     {
-        Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform);
+        Transform transform1 = Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform).transform;
+        // transform1.SetParent(null);
+        // transform1.localScale = Vector3.one;
+        // transform1.SetParent(transform);
     }
 
     private void OnValidate() {
