@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace MenusSystem
@@ -16,6 +18,9 @@ namespace MenusSystem
         private Image _muteImage;
         [SerializeField]
         private Image _soundImage;
+
+        [SerializeField]
+        private InputActionAsset _playerInput;
 
 
         //full screen 
@@ -80,6 +85,13 @@ namespace MenusSystem
         public void ResumeGame()
         {
             Time.timeScale = 1;
+            _playerInput.Enable();
+
+        }
+
+        public void ReloadScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
 

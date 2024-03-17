@@ -9,6 +9,8 @@ namespace InputSystem
         [SerializeField] private PauseRequesterObject _pauseRequester;
         [SerializeField] private GameObject _settingsPanel;
 
+        [SerializeField] private InputActionAsset _playerInput;
+
         private bool _isGamePaused = false;
 
         private void Awake() {
@@ -39,8 +41,16 @@ namespace InputSystem
             //if (_isGamePaused) _pauseRequester.RequestPause();
             //else _pauseRequester.RequestResume();
 
-            if (_isGamePaused) Time.timeScale = 0;
-            else Time.timeScale = 1;
+            if (_isGamePaused)
+            {
+                Time.timeScale = 0;
+                _playerInput.Disable();
+            }
+            else
+            {
+                Time.timeScale = 1;
+                _playerInput.Enable();
+            }
         }
 
         #region ENABLE / DISABLE INPUTACTIONS
