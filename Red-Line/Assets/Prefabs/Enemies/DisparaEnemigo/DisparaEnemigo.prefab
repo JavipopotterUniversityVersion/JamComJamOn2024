@@ -654,7 +654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5968721809552050667}
   - component: {fileID: 4244328148517590054}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StunCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2152637633988970760}
   - component: {fileID: 2261176143238466250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StunState
   m_TagString: Untagged
   m_Icon: {fileID: 0}

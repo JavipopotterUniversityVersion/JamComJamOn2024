@@ -7,12 +7,12 @@ public class RandomInstanceOnPoint : MonoBehaviour
     [SerializeField] GameObject[] prefabs;
     
     private void Awake() {
-        Spawn(transform.position);
+        Spawn(transform);
     }
     
-    public void Spawn(Vector3 position)
+    public void Spawn(Transform transform)
     {
-        Instantiate(prefabs[Random.Range(0, prefabs.Length)], position, Quaternion.identity);
+        Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform);
     }
 
     private void OnValidate() {
