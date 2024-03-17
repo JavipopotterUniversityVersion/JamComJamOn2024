@@ -91,7 +91,7 @@ namespace MenusSystem
 
         public void ReloadScene()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Game");
         }
 
 
