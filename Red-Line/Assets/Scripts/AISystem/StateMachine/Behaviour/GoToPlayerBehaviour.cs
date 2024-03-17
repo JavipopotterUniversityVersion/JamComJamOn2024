@@ -13,6 +13,8 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
     [SerializeField]
     float _speed = 1;
 
+    bool destroying = false;
+
 
     [SerializeField]
     Transform parentTransform;
@@ -30,6 +32,7 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
 
     public void ExecuteBehaviour()
     {
+        if (!destroying) StartCoroutine(DestroyMe());
         Collider2D collider = Physics2D.OverlapCircle(transform.position, _detectionRadius, _whatLayerToDetect.value);
         if (collider != null)
         {
@@ -41,5 +44,12 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
         rb.velocity = Vector2.Lerp(rb.velocity.normalized, _direction, Time.deltaTime * _weight) * _speed;
 
         parentTransform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(-rb.velocity.normalized.x, -rb.velocity.normalized.y) * Mathf.Rad2Deg);
+    }
+
+    IEnumerator DestroyMe()
+    {
+        destroying = true;
+        yield return new WaitForSeconds(3);
+        Destroy(rb.gameObject);
     }
 }
