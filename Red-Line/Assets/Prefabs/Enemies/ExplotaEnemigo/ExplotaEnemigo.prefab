@@ -33,6 +33,7 @@ Transform:
   - {fileID: 3904167726043919348}
   - {fileID: 8440589993458883281}
   - {fileID: 5821310445215043728}
+  - {fileID: 8265995323066041608}
   m_Father: {fileID: 4615948595046347587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &304579969006629399
@@ -207,6 +208,10 @@ MonoBehaviour:
     - conditionContainer: {fileID: 3456499373628711523}
       negated: 0
     stateContainer: {fileID: 1240979801914658682}
+  - conditions:
+    - conditionContainer: {fileID: 8738612697822964751}
+      negated: 0
+    stateContainer: {fileID: 7903128849338464651}
 --- !u!1 &1240979801914658682
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +944,7 @@ Transform:
   - {fileID: 150959142629432118}
   - {fileID: 5952279554344518678}
   - {fileID: 5468067836442033635}
+  - {fileID: 775485754708046669}
   m_Father: {fileID: 4615948595046347587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7322108985748731716
@@ -1012,6 +1018,59 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &7903128849338464651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8265995323066041608}
+  - component: {fileID: 253926323704995313}
+  m_Layer: 0
+  m_Name: StunState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8265995323066041608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7903128849338464651}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1475008637173466043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &253926323704995313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7903128849338464651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cea6a7c29b5624eb3e58e9dc294545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateAnimation: 
+  onEnterPerformers: []
+  onUpdatePerformers: []
+  onExitPerformers: []
+  nextStates:
+  - conditions:
+    - conditionContainer: {fileID: 8738612697822964751}
+      negated: 1
+    stateContainer: {fileID: 790892150878041890}
 --- !u!1 &8697404937878717572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,3 +1127,47 @@ MonoBehaviour:
     - conditionContainer: {fileID: 2781502690664085252}
       negated: 0
     stateContainer: {fileID: 6402354456680096109}
+--- !u!1 &8738612697822964751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775485754708046669}
+  - component: {fileID: 2490532673848922568}
+  m_Layer: 0
+  m_Name: StunCondition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775485754708046669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8738612697822964751}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6387721495961650888}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2490532673848922568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8738612697822964751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa45f78a90ea37142adcbdcabe8dacdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
