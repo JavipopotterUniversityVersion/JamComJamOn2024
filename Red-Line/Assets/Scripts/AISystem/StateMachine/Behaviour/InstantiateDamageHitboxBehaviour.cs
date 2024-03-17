@@ -18,11 +18,13 @@ public class InstantiateDamageCircleBehaviour : MonoBehaviour, IBehaviour
     public void ExecuteBehaviour()
     {
         Collider2D player = Physics2D.OverlapCircle(_myTransform.position, _explosionRadius, _whatLayerToDetect);
-
-        if (player.gameObject.TryGetComponent(out HealthComponent healthComponent) && !_hit)
+        if(player != null)
         {
-            _hit = true;
-            healthComponent.Damage(_damage);
+            if (player.gameObject.TryGetComponent(out HealthComponent healthComponent) && !_hit)
+            {
+                _hit = true;
+                healthComponent.Damage(_damage);
+            }
         }
     }
 

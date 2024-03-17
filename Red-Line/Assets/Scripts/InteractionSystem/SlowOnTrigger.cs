@@ -8,12 +8,13 @@ public class SlowOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if (targetLayer == (targetLayer | (1 << other.gameObject.layer)))
-        {
+        // if (targetLayer == (targetLayer | (1 << other.gameObject.layer)))
+        // {
             if(other.TryGetComponent(out Rigidbody2D rb))
             {
                 rb.velocity /= 2;
+                print("Slowed");
             }
-        }
+        // }
     }
 }
