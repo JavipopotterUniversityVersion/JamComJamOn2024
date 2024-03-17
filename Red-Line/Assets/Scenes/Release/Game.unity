@@ -1218,6 +1218,7 @@ GameObject:
   - component: {fileID: 1360476151}
   - component: {fileID: 1360476155}
   - component: {fileID: 1360476156}
+  - component: {fileID: 1360476157}
   m_Layer: 0
   m_Name: VC
   m_TagString: Untagged
@@ -1354,6 +1355,20 @@ MonoBehaviour:
     maxVignette: 0
     intervalIn: 0
     intervalOut: 0
+--- !u!114 &1360476157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360476150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 722d9677836871d4488e5c56d3622767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cameraEffects: {fileID: 11400000, guid: d65e42c8fa3657449b23b071403dceb6, type: 2}
+  _volumeProfile: {fileID: 11400000, guid: 731324c58937a9c4d9df6dc335666181, type: 2}
 --- !u!1001 &1392903002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2633,6 +2648,18 @@ PrefabInstance:
     - target: {fileID: 5561802072853833448, guid: bc9ad0027f4f21348bdfdefd107b2e05, type: 3}
       propertyPath: m_Name
       value: Health Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545405778237518698, guid: bc9ad0027f4f21348bdfdefd107b2e05, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545405778237518698, guid: bc9ad0027f4f21348bdfdefd107b2e05, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545405778237518698, guid: bc9ad0027f4f21348bdfdefd107b2e05, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1900
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

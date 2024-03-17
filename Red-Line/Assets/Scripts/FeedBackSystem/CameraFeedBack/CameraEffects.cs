@@ -17,8 +17,12 @@ public class CameraEffects : ScriptableObject
 
     UnityEvent<float, float> onVignetteChange = new UnityEvent<float, float>();
     public UnityEvent<float, float> OnVignetteChange => onVignetteChange;
+
+    UnityEvent<float> onDrunkEffect = new UnityEvent<float>();
+    public UnityEvent<float> OnDrunkEffect => onDrunkEffect;
     
     public void Shake(float shakeValue) => shakeEvent.Invoke(shakeValue);
     public void HitStop(float hitStopValue) => onHitStop.Invoke(hitStopValue);
     public void GlobalShaderChange(Shader shader) => onShaderChange.Invoke(shader);
+    public void Drunk(float duration) => onDrunkEffect.Invoke(duration);
 }
