@@ -14,6 +14,9 @@ public class HealthComponent : MonoBehaviour
     [SerializeField]
     private UnityEvent _onTakeDamage;
 
+    [SerializeField]
+    private GameObject _contadorDeLosCojones;
+
     UnityEvent<int> onLifeChanged = new UnityEvent<int>();
     public UnityEvent<int> OnLifeChanged => onLifeChanged;
 
@@ -35,9 +38,11 @@ public class HealthComponent : MonoBehaviour
 
         if (CurrentHealth <= 0)
         {
+            _contadorDeLosCojones.SetActive(false);
             _dieEvent.Invoke();
         }
     }
+
 
     public void Heal(int healNum)
     {

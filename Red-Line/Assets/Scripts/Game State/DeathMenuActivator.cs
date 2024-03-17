@@ -9,6 +9,7 @@ public class DeathMenuActivator : MonoBehaviour
     private void Awake() {
         _globalStateManager.OnDeathEvent.AddListener(() => gameObject.SetActive(true));
         _globalStateManager.OnResume.AddListener(() => gameObject.SetActive(false));
+        gameObject.SetActive(false);
     }
 
     private void OnDestroy() {

@@ -45,7 +45,7 @@ MonoBehaviour:
   onRestart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6816422011323603754, guid: cd898cea86d75964c8b1648ca5351fd3, type: 3}
+      - m_Target: {fileID: 8561610967904893407, guid: cd898cea86d75964c8b1648ca5351fd3, type: 3}
         m_TargetAssemblyTypeName: MenusSystem.SceneSettings, Assembly-CSharp
         m_MethodName: ReloadScene
         m_Mode: 1

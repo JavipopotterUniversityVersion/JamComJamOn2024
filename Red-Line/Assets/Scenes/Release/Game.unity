@@ -744,6 +744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7550944089428100219, guid: 761390094dc502d429c3148756dd9725, type: 3}
+      propertyPath: _contadorDeLosCojones
+      value: 
+      objectReference: {fileID: 518256207}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -980,13 +984,14 @@ GameObject:
   - component: {fileID: 1317176551}
   - component: {fileID: 1317176553}
   - component: {fileID: 1317176552}
+  - component: {fileID: 1317176554}
   m_Layer: 5
   m_Name: GameDeathScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1317176551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1044,6 +1049,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317176550}
   m_CullTransparentMesh: 1
+--- !u!114 &1317176554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317176550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850f6034b5987e84c86d0d79eec2327b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _globalStateManager: {fileID: 11400000, guid: e171fe1568b5218408634780d9f34fea, type: 2}
 --- !u!4 &1339493086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5225719693704795068, guid: 032c44edd75c13449996066effa2766c, type: 3}

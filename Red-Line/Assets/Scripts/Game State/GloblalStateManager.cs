@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -18,6 +19,8 @@ public class GlobalStateManager : ScriptableObject
     public void Death()
     {
         Time.timeScale = 0;
+
+
         onDeathEvent.Invoke();
     }
 
