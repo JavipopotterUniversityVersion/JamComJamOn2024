@@ -26,7 +26,8 @@ public class PoisonBulllet : MonoBehaviour, IBullet
         _direction = direction;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         HealthComponent health = collision.gameObject.GetComponentInChildren<HealthComponent>();
 
