@@ -7,10 +7,12 @@ public class ScoreUpdaterByGameSpeed : MonoBehaviour
 {
     [SerializeField] TestSpeedProviderObject _speedProvider;
     [SerializeField] Score _score;
+    int lastScore = 0;
     [SerializeField] float maxSpeed = 10;
     private void Awake() 
     {
         _speedProvider.Speed = 1;
+        _score.OnScoreChangedEvent.AddListener(OnScoreChanged);
         StartCoroutine(SpeedUpdate());
     }
 
@@ -27,8 +29,27 @@ public class ScoreUpdaterByGameSpeed : MonoBehaviour
         }
     }
 
+    void OnScoreChanged(int score)
+    {
+        int scoreDifference = score - lastScore;
+
+        if(scoreDifference > 9)
+        {
+            _score.scoreMultiplier++;
+            StopCoroutine(MultiplierUpdate());
+            StartCoroutine(MultiplierUpdate());
+        }
+    }
+
+    IEnumerator MultiplierUpdate()
+    {
+        yield return new WaitForSeconds(2);
+        _score.scoreMultiplier = 1;
+    }
+
     private void OnDestroy() 
     {
         StopCoroutine(SpeedUpdate());
+        _score.OnScoreChangedEvent.RemoveListener(OnScoreChanged);
     }
 }

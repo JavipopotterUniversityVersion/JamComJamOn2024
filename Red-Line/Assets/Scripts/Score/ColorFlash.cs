@@ -1,23 +1,21 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
+using System.Drawing;
 using TMPro;
 using UnityEngine;
 
-public class ScaleFlash : MonoBehaviour
+public class ColorFlash : MonoBehaviour
 {
-    [SerializeField] float scaleDuration = 0.1f;
+    [SerializeField] Gradient colorGradient;
+
+    [SerializeField] float FlashDuration = 0.1f;
     [SerializeField] float backDuration = 0.1f;
+
     TextMeshProUGUI text;
-    [SerializeField] float initMult;
-    float mult;
-    float fontSize;
 
     private void Awake() 
     {
         text = GetComponent<TextMeshProUGUI>();
-        fontSize = text.fontSize;
     }
 
     public void Flash(int value)
@@ -26,28 +24,25 @@ public class ScaleFlash : MonoBehaviour
 
         StopCoroutine(ScaleFlashCorroutine(value));
         StartCoroutine(ScaleFlashCorroutine(value));
-
     }
 
     IEnumerator ScaleFlashCorroutine(int value)
     {
         float time = 0;
 
-        float multMultult = initMult / (value * 0.5f);
-        mult = initMult * value * multMultult;
-
-        while(time <= scaleDuration)
+        while(time <= FlashDuration)
         {
             time += Time.fixedDeltaTime;
-            text.fontSize = Mathf.Lerp(fontSize, fontSize * mult, time / scaleDuration);
+            text.color = colorGradient.Evaluate(time / FlashDuration * value * 0.01f);
             yield return new WaitForFixedUpdate();
         }
 
         time = 0;
+        
         while(time <= backDuration)
         {
             time += Time.fixedDeltaTime;
-            text.fontSize = Mathf.Lerp(fontSize * mult, fontSize, time / backDuration);
+            text.color = UnityEngine.Color.Lerp(text.color, UnityEngine.Color.white, time / backDuration);
             yield return new WaitForFixedUpdate();
         }
     }
