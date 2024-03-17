@@ -28,6 +28,7 @@ public class ParableBulletComponent : MonoBehaviour
         if (collision.GetComponent<MovementStopper>() != null && collision.TryGetComponent<HealthComponent>(out HealthComponent a))
         {
             a.Damage(_damage);
+            Destroy(gameObject);
         }
     }
 
