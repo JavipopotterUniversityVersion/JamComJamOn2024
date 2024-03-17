@@ -544,6 +544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 1
   _currentHealth: 1
+  _score: {fileID: 0}
   _dieEvent:
     m_PersistentCalls:
       m_Calls:

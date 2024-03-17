@@ -8,14 +8,15 @@ public class HealthComponent : MonoBehaviour
     [SerializeField] private int _maxHealth = 3;
     [SerializeField] private int _currentHealth = 1;
 
+
     [SerializeField]
     private UnityEvent _dieEvent;
 
     [SerializeField]
     private UnityEvent _onTakeDamage;
 
-    [SerializeField]
-    private GameObject _contadorDeLosCojones;
+    
+
 
     UnityEvent<int> onLifeChanged = new UnityEvent<int>();
     public UnityEvent<int> OnLifeChanged => onLifeChanged;
@@ -38,7 +39,6 @@ public class HealthComponent : MonoBehaviour
 
         if (CurrentHealth <= 0)
         {
-            _contadorDeLosCojones.SetActive(false);
             _dieEvent.Invoke();
         }
     }

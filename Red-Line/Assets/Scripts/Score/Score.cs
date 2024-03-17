@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class Score : ScriptableObject
 {
     [SerializeField] private int _score;
+    private bool _playerIsDead = false;
     public int score 
     {
         get => _score;
@@ -17,12 +18,21 @@ public class Score : ScriptableObject
         }
     }
 
+    public void PlayerHasDied() => _playerIsDead = true;
+
     public int scoreMultiplier = 1;
 
     UnityEvent<int> OnScoreChanged = new UnityEvent<int>();
     public UnityEvent<int> OnScoreChangedEvent => OnScoreChanged;
 
-    public void Reset() => score = 0;
+    public void Reset() 
+    { 
+        score = 0; 
+        _playerIsDead = false; 
+    }
 
-    public void AddScore(int amount) => score += amount * scoreMultiplier;
+    public void AddScore(int amount)
+    {
+        if (!_playerIsDead) score += amount * scoreMultiplier;
+    }
 }
