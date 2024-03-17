@@ -21,6 +21,7 @@ public class bulletDisparaEnemigoComponent : MonoBehaviour
     private void Awake()
     {
         _myTransform = transform;
+        StartCoroutine(MuerePuta());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,5 +31,11 @@ public class bulletDisparaEnemigoComponent : MonoBehaviour
             a.Damage(_damage);
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator MuerePuta()
+    {
+        yield return new WaitForSeconds(4);
+        Destroy(gameObject);
     }
 }

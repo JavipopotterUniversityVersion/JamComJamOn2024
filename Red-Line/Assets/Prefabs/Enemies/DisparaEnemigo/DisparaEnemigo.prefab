@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 5640275062292428491}
   - component: {fileID: 4341744266066473627}
   m_Layer: 7
-  m_Name: Wait 1 sCondition
+  m_Name: Wait 3 sCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 002779ba1c42a2c4a9ba64754ec3f683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waitTime: 1
+  _waitTime: 3
 --- !u!1 &3388187333602784447
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +377,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateAnimation: 
-  onEnterPerformers: []
+  onEnterPerformers:
+  - condition: []
+    behaviourContainers:
+    - {fileID: 4901519219401705968}
   onUpdatePerformers: []
   onExitPerformers: []
   nextStates:
