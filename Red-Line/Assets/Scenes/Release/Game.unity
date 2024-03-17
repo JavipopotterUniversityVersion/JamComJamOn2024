@@ -1035,10 +1035,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7781963539090256151, guid: 032c44edd75c13449996066effa2766c, type: 3}
       propertyPath: _secondsUntilNextSpawn
-      value: 45
+      value: 26.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5702539421788055992, guid: 032c44edd75c13449996066effa2766c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 032c44edd75c13449996066effa2766c, type: 3}
@@ -1165,6 +1166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5306bd3e27064f9fefebb1f9d3109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scaleDuration: 0.1
+  backDuration: 0.1
 --- !u!114 &1927729389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,6 +1307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speedProvider: {fileID: 11400000, guid: 6c540e95625cdc74cb2c6e9314364977, type: 2}
   _score: {fileID: 11400000, guid: 18f8e8153372df840a36202094a79c1c, type: 2}
+  maxSpeed: 10
 --- !u!1 &1933693868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5167861309115990556, guid: b812f032d8aae7d408c7de36e8af1d8f, type: 3}

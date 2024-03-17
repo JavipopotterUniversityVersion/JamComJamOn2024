@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68019520e78ccf04fbfc2164cdf2474e, type: 3}
   m_Name: Test Speed Provider I
   m_EditorClassIdentifier: 
-  _speed: 1
+  _speed: 7.941177
