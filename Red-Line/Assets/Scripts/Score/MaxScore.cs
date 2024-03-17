@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "MaxScore", menuName = "MaxScore")]
 public class MaxScore : ScriptableObject
 {
     [SerializeField] private Score _score;
