@@ -20,6 +20,7 @@ public class RockComponent : MonoBehaviour
         {
             if (velocityDivider != 0)
             xd.GetComponentInParent<Rigidbody2D>().velocity = xd.GetComponentInParent<Rigidbody2D>().velocity / velocityDivider;
+            Destroy (gameObject);
         }
     }
 }
