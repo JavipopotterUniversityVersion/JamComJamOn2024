@@ -17,7 +17,7 @@ public class ScoreUpdaterByGameSpeed : MonoBehaviour
     }
 
     private void Update() {
-        if(_speedProvider.Speed < 15) _speedProvider.Speed += Time.deltaTime / (_speedProvider.Speed * 2);
+        if(_speedProvider.Speed < maxSpeed) _speedProvider.Speed += Time.deltaTime / (_speedProvider.Speed * 2);
     }
 
     IEnumerator SpeedUpdate()
