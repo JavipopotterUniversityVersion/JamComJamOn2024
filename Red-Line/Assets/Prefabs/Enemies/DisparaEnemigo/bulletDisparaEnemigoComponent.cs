@@ -11,6 +11,7 @@ public class bulletDisparaEnemigoComponent : MonoBehaviour
     public void SetDirection(Vector2 direction)
     {
         _direction = direction.normalized;
+        _myTransform.rotation = Quaternion.Euler(0,0, Mathf.Atan2(direction.normalized.y, direction.normalized.x) * Mathf.Rad2Deg);
     }
 
     private void Update()
