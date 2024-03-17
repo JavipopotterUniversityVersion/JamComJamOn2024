@@ -18,10 +18,8 @@ public class GlobalStateManager : ScriptableObject
 
     public void Death()
     {
-        Time.timeScale = 0;
-
-
         onDeathEvent.Invoke();
+        Time.timeScale = 0;
     }
 
     public void Resume()

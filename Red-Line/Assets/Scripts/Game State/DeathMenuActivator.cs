@@ -7,7 +7,7 @@ public class DeathMenuActivator : MonoBehaviour
     [SerializeField] GlobalStateManager _globalStateManager;
 
     private void Awake() {
-        _globalStateManager.OnDeathEvent.AddListener(() => gameObject.SetActive(true));
+        _globalStateManager.OnDeathEvent.AddListener(() =>  {gameObject.SetActive(true) ; Time.timeScale = 0; });
         _globalStateManager.OnResume.AddListener(() => gameObject.SetActive(false));
         gameObject.SetActive(false);
     }
