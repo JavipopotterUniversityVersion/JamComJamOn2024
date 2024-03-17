@@ -34,10 +34,12 @@ public class GoToPlayerBehaviour : MonoBehaviour, IBehaviour
         if (collider != null)
         {
             _direction = (collider.transform.position - transform.position).normalized;
-            parentTransform.rotation = Quaternion.Euler(0,0,Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg);
+            
             
         }
 
         rb.velocity = Vector2.Lerp(rb.velocity.normalized, _direction, Time.deltaTime * _weight) * _speed;
+
+        parentTransform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(-rb.velocity.normalized.x, -rb.velocity.normalized.y) * Mathf.Rad2Deg);
     }
 }
