@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c7abea7f7cede43ab5b85b7d3f316e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _detectionRadius: 8.79
+  _detectionRadius: 16
   _whatLayerToDetect:
     serializedVersion: 2
     m_Bits: 64
