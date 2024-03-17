@@ -12,4 +12,8 @@ public class FinalScoreDisplayer : MonoBehaviour
     {
         text.text = _score.score.ToString();
     }
+
+    private void OnEnable() {
+        UpdateDeathText();
+    }
 }
